@@ -2,5 +2,5 @@
 	"preload": {
 		"ROUTING_CORES": 2
 	},
-	"GRT_ANT_MARGIN": [15, 20, 25, 30]
+	"GRT_ANT_MARGIN": [35, 40, 45, 50]
 }
