@@ -1,0 +1,68 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1684106866
+<< obsli1 >>
+rect 1104 2159 48852 57681
+<< obsm1 >>
+rect 934 2128 48852 57712
+<< metal2 >>
+rect 24950 59200 25006 60000
+rect 24950 0 25006 800
+<< obsm2 >>
+rect 938 59144 24894 59242
+rect 25062 59144 35902 59242
+rect 938 856 35902 59144
+rect 938 800 24894 856
+rect 25062 800 35902 856
+<< metal3 >>
+rect 0 29928 800 30048
+rect 49200 29928 50000 30048
+<< obsm3 >>
+rect 800 30128 35906 57697
+rect 880 29848 35906 30128
+rect 800 2143 35906 29848
+<< metal4 >>
+rect 4208 2128 4528 57712
+rect 4868 2128 5188 57712
+rect 34928 2128 35248 57712
+rect 35588 2128 35908 57712
+<< metal5 >>
+rect 1056 36642 48900 36962
+rect 1056 35982 48900 36302
+rect 1056 6006 48900 6326
+rect 1056 5346 48900 5666
+<< labels >>
+rlabel metal3 s 49200 29928 50000 30048 6 CLK
+port 1 nsew
+rlabel metal3 s 0 29928 800 30048 6 EN
+port 2 nsew
+rlabel metal2 s 24950 59200 25006 60000 6 IN
+port 3 nsew
+rlabel metal2 s 24950 0 25006 800 6 OUT
+port 4 nsew
+rlabel metal5 s 1056 36642 48900 36962 6 VGND
+port 5 nsew ground default
+rlabel metal5 s 1056 6006 48900 6326 6 VGND
+port 5 nsew ground default
+rlabel metal4 s 35588 2128 35908 57712 6 VGND
+port 5 nsew ground default
+rlabel metal4 s 4868 2128 5188 57712 6 VGND
+port 5 nsew ground default
+rlabel metal5 s 1056 35982 48900 36302 6 VPWR
+port 6 nsew power default
+rlabel metal5 s 1056 5346 48900 5666 6 VPWR
+port 6 nsew power default
+rlabel metal4 s 34928 2128 35248 57712 6 VPWR
+port 6 nsew power default
+rlabel metal4 s 4208 2128 4528 57712 6 VPWR
+port 6 nsew power default
+<< properties >>
+string FIXED_BBOX 0 0 50000 60000
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 821406
+string GDS_FILE /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/signoff/buff_chain.magic.gds
+string GDS_START 53334
+<< end >>
+

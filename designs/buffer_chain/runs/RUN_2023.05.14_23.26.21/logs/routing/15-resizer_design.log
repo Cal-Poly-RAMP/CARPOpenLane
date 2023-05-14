@@ -1,0 +1,93 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/cts/14-buff_chain.resized.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/synthesis/resizer_sky130_fd_sc_hd__tt_025C_1v80.lib
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 6
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 5
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal      30960         15715          49.24%
+met2       Vertical        23220         15415          33.61%
+met3       Horizontal      15480         10760          30.49%
+met4       Vertical         9288          5978          35.64%
+met5       Horizontal       3096          1505          51.39%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 35
+[INFO GRT-0198] Via related Steiner nodes: 0
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 36
+[INFO GRT-0112] Final usage 3D: 171
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             15715            20            0.13%             0 /  0 /  0
+met2             15415            43            0.28%             0 /  0 /  0
+met3             10760             0            0.00%             0 /  0 /  0
+met4              5978             0            0.00%             0 /  0 /  0
+met5              1505             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            49373            63            0.13%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 565 um
+[INFO GRT-0014] Routed nets: 14
+[INFO]: Setting RC values...
+[INFO RSZ-0058] Using max wire length 3048um.
+[INFO GRT-0009] rerouting 2 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 2
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 2
+[INFO RSZ-0039] Resized 1 instances.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL             476.6 u
+legalized HPWL            485.2 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 3 instances
+[INFO DPL-0021] HPWL before             485.2 u
+[INFO DPL-0022] HPWL after              476.6 u
+[INFO DPL-0023] HPWL delta               -1.8 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/15-buff_chain.odb'…
+Writing netlist to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/15-buff_chain.nl.v'…
+Writing powered netlist to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/15-buff_chain.pnl.v'…
+Writing layout to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/15-buff_chain.def'…
+Writing timing constraints to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/15-buff_chain.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 1265 u^2 2% utilization.
+area_report_end

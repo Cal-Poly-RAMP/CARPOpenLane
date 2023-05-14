@@ -1,0 +1,97 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: EN (input port clocked by CLK)
+Endpoint: OUT (output port clocked by CLK)
+Path Group: CLK
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.11    0.08    2.08 ^ EN (in)
+     5    0.02                           EN (net)
+                  0.11    0.00    2.08 ^ _09_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.04    2.12 v _09_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           _00_ (net)
+                  0.03    0.00    2.12 v _10_/TE_B (sky130_fd_sc_hd__ebufn_2)
+                  0.06    0.08    2.20 ^ _10_/Z (sky130_fd_sc_hd__ebufn_2)
+     1    0.00                           buff1.Z (net)
+                  0.06    0.00    2.20 ^ _11_/A (sky130_fd_sc_hd__ebufn_2)
+                  0.06    0.12    2.33 ^ _11_/Z (sky130_fd_sc_hd__ebufn_2)
+     1    0.00                           buff2.Z (net)
+                  0.06    0.00    2.33 ^ _12_/A (sky130_fd_sc_hd__ebufn_2)
+                  0.06    0.12    2.45 ^ _12_/Z (sky130_fd_sc_hd__ebufn_2)
+     1    0.00                           buff3.Z (net)
+                  0.06    0.00    2.45 ^ _13_/A (sky130_fd_sc_hd__ebufn_2)
+                  0.06    0.12    2.58 ^ _13_/Z (sky130_fd_sc_hd__ebufn_2)
+     1    0.00                           buff4.Z (net)
+                  0.06    0.00    2.58 ^ _14_/A (sky130_fd_sc_hd__ebufn_2)
+                  0.43    0.42    2.99 ^ _14_/Z (sky130_fd_sc_hd__ebufn_2)
+     1    0.04                           OUT (net)
+                  0.43    0.00    2.99 ^ OUT (out)
+                                  2.99   data arrival time
+
+                  0.15   10.00   10.00   clock CLK (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.99   data arrival time
+-----------------------------------------------------------------------------
+                                  4.76   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 13 unannotated drivers.
+ CLK
+ EN
+ IN
+ _05_/Y
+ _06_/Y
+ _07_/Y
+ _08_/Y
+ _09_/Y
+ _10_/Z
+ _11_/Z
+ _12_/Z
+ _13_/Z
+ _14_/Z
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

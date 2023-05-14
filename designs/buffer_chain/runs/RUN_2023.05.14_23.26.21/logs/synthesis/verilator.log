@@ -1,0 +1,38 @@
+%Warning-UNUSEDSIGNAL: //openlane/designs/buffer_chain/src/buff_chain.v:2:8: Signal is not used: 'CLK'
+                                                                           : ... In instance buff_chain
+    2 |  input CLK,
+      |        ^~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.009
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: //root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v:41888:13: Signal is not used: 'VPWR'
+                                                                                                         : ... In instance buff_chain.buff5
+41888 |     supply1 VPWR;
+      |             ^~~~
+%Warning-UNUSEDSIGNAL: //root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v:41889:13: Signal is not used: 'VGND'
+                                                                                                         : ... In instance buff_chain.buff5
+41889 |     supply0 VGND;
+      |             ^~~~
+%Warning-UNUSEDSIGNAL: //root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v:41890:13: Signal is not used: 'VPB'
+                                                                                                         : ... In instance buff_chain.buff5
+41890 |     supply1 VPB ;
+      |             ^~~
+%Warning-UNUSEDSIGNAL: //root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v:41891:13: Signal is not used: 'VNB'
+                                                                                                         : ... In instance buff_chain.buff5
+41891 |     supply0 VNB ;
+      |             ^~~
+%Warning-UNUSEDSIGNAL: //root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v:41676:13: Signal is not used: 'VPWR'
+                                                                                                         : ... In instance buff_chain.buff5.base
+41676 |     supply1 VPWR;
+      |             ^~~~
+%Warning-UNUSEDSIGNAL: //root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v:41677:13: Signal is not used: 'VGND'
+                                                                                                         : ... In instance buff_chain.buff5.base
+41677 |     supply0 VGND;
+      |             ^~~~
+%Warning-UNUSEDSIGNAL: //root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v:41678:13: Signal is not used: 'VPB'
+                                                                                                         : ... In instance buff_chain.buff5.base
+41678 |     supply1 VPB ;
+      |             ^~~
+%Warning-UNUSEDSIGNAL: //root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v:41679:13: Signal is not used: 'VNB'
+                                                                                                         : ... In instance buff_chain.buff5.base
+41679 |     supply0 VNB ;
+      |             ^~~

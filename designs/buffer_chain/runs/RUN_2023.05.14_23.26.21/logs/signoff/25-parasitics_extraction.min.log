@@ -1,0 +1,41 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/merged.min.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/merged.min.lef at line 68353.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/merged.min.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/routing/buff_chain.def
+[INFO ODB-0128] Design: buff_chain
+[INFO ODB-0130]     Created 6 pins.
+[INFO ODB-0131]     Created 6810 components and 25397 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 25368 connections.
+[INFO ODB-0133]     Created 15 nets and 29 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/routing/buff_chain.def
+define_corners Typical
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Using RCX ruleset '/root/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre'...
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of buff_chain ...
+[INFO RCX-0435] Reading extraction model file /root/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre ...
+[INFO RCX-0436] RC segment generation buff_chain (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 28 rc segments
+[INFO RCX-0439] Coupling Cap extraction buff_chain ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 564 wires to be extracted
+[INFO RCX-0442] 95% completion -- 540 wires have been extracted
+[INFO RCX-0045] Extract 15 nets, 42 rsegs, 42 caps, 17 ccs
+[INFO RCX-0015] Finished extracting buff_chain.
+Writing result to /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/routing/mca/process_corner_min/buff_chain.spef...
+Setting global connections for newly added cells…
+[WARNING] Did not save OpenROAD database!
+Writing extracted parasitics to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/routing/mca/process_corner_min/buff_chain.spef'…
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 15 nets finished
+[INFO RCX-0017] Finished writing SPEF ...

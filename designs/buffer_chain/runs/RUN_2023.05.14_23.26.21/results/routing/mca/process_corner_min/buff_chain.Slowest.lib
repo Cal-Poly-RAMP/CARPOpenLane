@@ -1,0 +1,85 @@
+library (buff_chain) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 100.0;
+  nom_voltage                    : 1.60;
+
+  lu_table_template(template_1) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00996,  0.01118,  0.01539,  0.02988,  0.07978,  0.25161,  0.84336");
+  }
+
+  cell ("buff_chain") {
+    pin("CLK") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("EN") {
+      direction : input;
+      capacitance : 0.0023;
+    }
+    pin("IN") {
+      direction : input;
+      capacitance : 0.0030;
+    }
+    pin("OUT") {
+      direction : output;
+      capacitance : 0.0223;
+      timing() {
+        related_pin : "EN";
+        timing_type : combinational;
+	cell_rise(template_1) {
+          values("1.83533,1.84197,1.86395,1.93475,2.16344,2.92948,5.52814");
+	}
+	rise_transition(template_1) {
+          values("0.06860,0.07608,0.10148,0.18869,0.48591,1.51227,5.00273");
+	}
+	cell_fall(template_1) {
+          values("1.71803,1.72281,1.73744,1.77727,1.88089,2.19455,3.26074");
+	}
+	fall_transition(template_1) {
+          values("0.04832,0.05198,0.06298,0.09827,0.21586,0.63359,2.09144");
+	}
+      }
+      timing() {
+        related_pin : "IN";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_1) {
+          values("1.77738,1.78402,1.80600,1.87680,2.10549,2.87153,5.47019");
+	}
+	rise_transition(template_1) {
+          values("0.06860,0.07608,0.10148,0.18869,0.48591,1.51227,5.00273");
+	}
+	cell_fall(template_1) {
+          values("1.54961,1.55439,1.56902,1.60885,1.71247,2.02614,3.09233");
+	}
+	fall_transition(template_1) {
+          values("0.04832,0.05198,0.06298,0.09827,0.21586,0.63359,2.09144");
+	}
+      }
+    }
+  }
+
+}

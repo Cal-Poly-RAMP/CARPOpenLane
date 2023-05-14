@@ -1,0 +1,127 @@
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= Fastest Corner ===================================
+
+Startpoint: EN (input port clocked by CLK)
+Endpoint: OUT (output port clocked by CLK)
+Path Group: CLK
+Path Type: min
+Corner: Fastest
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.00    0.00    2.00 v EN (in)
+     1    0.00                           EN (net)
+                  0.00    0.00    2.00 v input1/A (sky130_fd_sc_hd__buf_2)
+                  0.07    0.11    2.11 v input1/X (sky130_fd_sc_hd__buf_2)
+     5    0.04                           net1 (net)
+                  0.07    0.00    2.11 v _05_/A (sky130_fd_sc_hd__inv_2)
+                  0.05    0.06    2.18 ^ _05_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.01                           _04_ (net)
+                  0.05    0.00    2.18 ^ _14_/TE_B (sky130_fd_sc_hd__ebufn_8)
+                  0.00    0.04    2.21 v _14_/Z (sky130_fd_sc_hd__ebufn_8)
+     1    0.06                           OUT (net)
+                  0.00    0.01    2.22 v OUT (out)
+                                  2.22   data arrival time
+
+                          0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.22   data arrival time
+-----------------------------------------------------------------------------
+                                  3.97   slack (MET)
+
+
+
+======================= Slowest Corner ===================================
+
+Startpoint: EN (input port clocked by CLK)
+Endpoint: OUT (output port clocked by CLK)
+Path Group: CLK
+Path Type: min
+Corner: Slowest
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.02    0.01    2.01 v EN (in)
+     1    0.00                           EN (net)
+                  0.02    0.00    2.01 v input1/A (sky130_fd_sc_hd__buf_2)
+                  0.19    0.32    2.33 v input1/X (sky130_fd_sc_hd__buf_2)
+     5    0.04                           net1 (net)
+                  0.19    0.00    2.33 v _05_/A (sky130_fd_sc_hd__inv_2)
+                  0.11    0.16    2.49 ^ _05_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.01                           _04_ (net)
+                  0.11    0.00    2.49 ^ _14_/TE_B (sky130_fd_sc_hd__ebufn_8)
+                  0.00    0.07    2.57 v _14_/Z (sky130_fd_sc_hd__ebufn_8)
+     1    0.06                           OUT (net)
+                  0.00    0.01    2.57 v OUT (out)
+                                  2.57   data arrival time
+
+                          0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.57   data arrival time
+-----------------------------------------------------------------------------
+                                  4.32   slack (MET)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: EN (input port clocked by CLK)
+Endpoint: OUT (output port clocked by CLK)
+Path Group: CLK
+Path Type: min
+Corner: Typical
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          2.00    2.00 v input external delay
+                  0.01    0.00    2.00 v EN (in)
+     1    0.00                           EN (net)
+                  0.01    0.00    2.00 v input1/A (sky130_fd_sc_hd__buf_2)
+                  0.10    0.16    2.17 v input1/X (sky130_fd_sc_hd__buf_2)
+     5    0.04                           net1 (net)
+                  0.10    0.00    2.17 v _05_/A (sky130_fd_sc_hd__inv_2)
+                  0.07    0.09    2.26 ^ _05_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.01                           _04_ (net)
+                  0.07    0.00    2.26 ^ _14_/TE_B (sky130_fd_sc_hd__ebufn_8)
+                  0.00    0.05    2.31 v _14_/Z (sky130_fd_sc_hd__ebufn_8)
+     1    0.06                           OUT (net)
+                  0.00    0.01    2.32 v OUT (out)
+                                  2.32   data arrival time
+
+                          0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.32   data arrival time
+-----------------------------------------------------------------------------
+                                  4.07   slack (MET)
+
+
+
