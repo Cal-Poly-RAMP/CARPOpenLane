@@ -2,5 +2,5 @@
 	"preload": {
 		"ROUTING_CORES": 2
 	},
-	"GRT_ANT_MARGIN": [35, 40, 45, 50]
+	"GRT_MAX_DIODE_INS_ITERS": [10, 20, 30, 40]
 }
