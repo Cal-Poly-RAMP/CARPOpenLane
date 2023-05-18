@@ -1,0 +1,1 @@
+lvs {/openlane/designs/spm/runs/openlane_test/results/signoff/spm.spice spm} {/openlane/designs/spm/runs/openlane_test/tmp/signoff/36-spm.pnl.v spm} /root/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/spm/runs/openlane_test/logs/signoff/39-spm.lef.lvs.log -json

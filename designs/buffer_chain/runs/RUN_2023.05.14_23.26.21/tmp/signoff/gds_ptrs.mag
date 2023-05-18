@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 50000 60000
+string GDS_END 821406
+string GDS_FILE /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/signoff/buff_chain.magic.gds
+string GDS_START 53334
+<< end >>

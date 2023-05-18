@@ -1,0 +1,41 @@
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= Typical Corner ===================================
+
+Startpoint: EN (input port clocked by CLK)
+Endpoint: OUT (output port clocked by CLK)
+Path Group: CLK
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.05    0.03    2.03 v EN (in)
+     5    0.02                           EN (net)
+                  0.05    0.00    2.03 v _05_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.05    2.08 ^ _05_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           _04_ (net)
+                  0.03    0.00    2.08 ^ _14_/TE_B (sky130_fd_sc_hd__ebufn_2)
+                  0.00    0.04    2.11 v _14_/Z (sky130_fd_sc_hd__ebufn_2)
+     1    0.04                           OUT (net)
+                  0.00    0.00    2.11 v OUT (out)
+                                  2.11   data arrival time
+
+                  0.15    0.00    0.00   clock CLK (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.11   data arrival time
+-----------------------------------------------------------------------------
+                                  3.86   slack (MET)
+
+
+

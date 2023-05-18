@@ -1,0 +1,124 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/sv_core/runs/RUN_2023.05.14_22.42.33/results/floorplan/core.odb'…
+define_corners Typical
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 244260 288320
+[INFO GPL-0006] NumInstances: 4155
+[INFO GPL-0007] NumPlaceInstances: 3015
+[INFO GPL-0008] NumFixedInstances: 1140
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 3149
+[INFO GPL-0011] NumPins: 11526
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 250000 300000
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 244260 288320
+[INFO GPL-0016] CoreArea: 66236025600
+[INFO GPL-0017] NonPlaceInstsArea: 1936857600
+[INFO GPL-0018] PlaceInstsArea: 33878742400
+[INFO GPL-0019] Util(%): 52.69
+[INFO GPL-0020] StdInstsArea: 33878742400
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00001090 HPWL: 98850700
+[InitialPlace]  Iter: 2 CG residual: 0.00000011 HPWL: 74757514
+[InitialPlace]  Iter: 3 CG residual: 0.00000011 HPWL: 69782190
+[InitialPlace]  Iter: 4 CG residual: 0.00000008 HPWL: 68040959
+[InitialPlace]  Iter: 5 CG residual: 0.00000010 HPWL: 67456978
+[INFO GPL-0031] FillerInit: NumGCells: 3449
+[INFO GPL-0032] FillerInit: NumGNets: 3149
+[INFO GPL-0033] FillerInit: NumGPins: 11526
+[INFO GPL-0023] TargetDensity: 0.60
+[INFO GPL-0024] AveragePlaceInstArea: 11236730
+[INFO GPL-0025] IdealBinArea: 18727882
+[INFO GPL-0026] IdealBinCnt: 3536
+[INFO GPL-0027] TotalBinArea: 66236025600
+[INFO GPL-0028] BinCnt: 32 32
+[INFO GPL-0029] BinSize: 7461 8670
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter: 1 overflow: 0.962377 HPWL: 53907968
+[NesterovSolve] Iter: 10 overflow: 0.849001 HPWL: 68635033
+[NesterovSolve] Iter: 20 overflow: 0.806685 HPWL: 72397844
+[NesterovSolve] Iter: 30 overflow: 0.798204 HPWL: 72921001
+[NesterovSolve] Iter: 40 overflow: 0.79506 HPWL: 72385947
+[NesterovSolve] Iter: 50 overflow: 0.79542 HPWL: 72243580
+[NesterovSolve] Iter: 60 overflow: 0.794075 HPWL: 72410905
+[NesterovSolve] Iter: 70 overflow: 0.792633 HPWL: 72506603
+[NesterovSolve] Iter: 80 overflow: 0.792669 HPWL: 72409459
+[NesterovSolve] Iter: 90 overflow: 0.794793 HPWL: 72154365
+[NesterovSolve] Iter: 100 overflow: 0.795685 HPWL: 71930911
+[NesterovSolve] Iter: 110 overflow: 0.795591 HPWL: 71898670
+[NesterovSolve] Iter: 120 overflow: 0.795124 HPWL: 72023242
+[NesterovSolve] Iter: 130 overflow: 0.794033 HPWL: 72165995
+[NesterovSolve] Iter: 140 overflow: 0.792917 HPWL: 72279831
+[NesterovSolve] Iter: 150 overflow: 0.791783 HPWL: 72405154
+[NesterovSolve] Iter: 160 overflow: 0.790188 HPWL: 72583102
+[NesterovSolve] Iter: 170 overflow: 0.787623 HPWL: 72842911
+[INFO GPL-0100] worst slack 2.2e-09
+[INFO GPL-0103] Weighted 350 nets.
+[NesterovSolve] Iter: 180 overflow: 0.784377 HPWL: 73180676
+[NesterovSolve] Iter: 190 overflow: 0.78682 HPWL: 73467489
+[NesterovSolve] Iter: 200 overflow: 0.780633 HPWL: 73775947
+[NesterovSolve] Iter: 210 overflow: 0.764836 HPWL: 74968778
+[NesterovSolve] Iter: 220 overflow: 0.746759 HPWL: 76958799
+[NesterovSolve] Iter: 230 overflow: 0.728436 HPWL: 79619238
+[NesterovSolve] Iter: 240 overflow: 0.702093 HPWL: 82701576
+[NesterovSolve] Iter: 250 overflow: 0.672265 HPWL: 86060794
+[NesterovSolve] Iter: 260 overflow: 0.63559 HPWL: 89417458
+[INFO GPL-0100] worst slack 2.1e-09
+[INFO GPL-0103] Weighted 351 nets.
+[NesterovSolve] Iter: 270 overflow: 0.595383 HPWL: 92256228
+[NesterovSolve] Snapshot saved at iter = 269
+[NesterovSolve] Iter: 280 overflow: 0.556099 HPWL: 94609596
+[NesterovSolve] Iter: 290 overflow: 0.508798 HPWL: 96481195
+[INFO GPL-0100] worst slack 2.03e-09
+[INFO GPL-0103] Weighted 351 nets.
+[NesterovSolve] Iter: 300 overflow: 0.460578 HPWL: 98610273
+[NesterovSolve] Iter: 310 overflow: 0.4029 HPWL: 100634319
+[NesterovSolve] Iter: 320 overflow: 0.351508 HPWL: 102634370
+[NesterovSolve] Iter: 330 overflow: 0.30576 HPWL: 103591403
+[INFO GPL-0100] worst slack 1.96e-09
+[INFO GPL-0103] Weighted 351 nets.
+[NesterovSolve] Iter: 340 overflow: 0.269605 HPWL: 103761336
+[NesterovSolve] Iter: 350 overflow: 0.243858 HPWL: 104950767
+[NesterovSolve] Iter: 360 overflow: 0.2146 HPWL: 106045100
+[INFO GPL-0100] worst slack 1.89e-09
+[INFO GPL-0103] Weighted 349 nets.
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 6900 6900
+[INFO GPL-0038] TileCnt: 36 43
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 1548
+[INFO GPL-0063] TotalRouteOverflowH2: 3.850000262260437
+[INFO GPL-0064] TotalRouteOverflowV2: 5.8000006675720215
+[INFO GPL-0065] OverflowTileCnt2: 50
+[INFO GPL-0066] 0.5%RC: 1.2777777910232544
+[INFO GPL-0067] 1.0%RC: 1.1931034655406558
+[INFO GPL-0068] 2.0%RC: 1.1000000115098625
+[INFO GPL-0069] 5.0%RC: 1.0405594452277764
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 1.2354406
+[NesterovSolve] Iter: 370 overflow: 0.185233 HPWL: 106721673
+[NesterovSolve] Iter: 380 overflow: 0.159602 HPWL: 107052192
+[INFO GPL-0100] worst slack 1.81e-09
+[INFO GPL-0103] Weighted 351 nets.
+[NesterovSolve] Iter: 390 overflow: 0.135725 HPWL: 107508776
+[NesterovSolve] Iter: 400 overflow: 0.110981 HPWL: 107581781
+[NesterovSolve] Finished with Overflow: 0.099336
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/sv_core/runs/RUN_2023.05.14_22.42.33/tmp/placement/7-global.odb'…
+Writing netlist to '/openlane/designs/sv_core/runs/RUN_2023.05.14_22.42.33/tmp/placement/7-global.nl.v'…
+Writing powered netlist to '/openlane/designs/sv_core/runs/RUN_2023.05.14_22.42.33/tmp/placement/7-global.pnl.v'…
+Writing layout to '/openlane/designs/sv_core/runs/RUN_2023.05.14_22.42.33/tmp/placement/7-global.def'…
+[INFO]: Setting RC values...

@@ -1,0 +1,1 @@
+lvs {/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/signoff/buff_chain.spice buff_chain} {/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/signoff/36-buff_chain.pnl.v buff_chain} /root/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/logs/signoff/39-buff_chain.lef.lvs.log -json

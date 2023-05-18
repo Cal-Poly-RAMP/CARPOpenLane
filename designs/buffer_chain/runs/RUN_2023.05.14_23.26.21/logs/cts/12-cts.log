@@ -1,0 +1,58 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/placement/buff_chain.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/tmp/cts/cts.lib
+[INFO]: Setting RC values...
+[INFO]: Configuring cts characterization...
+[INFO]: Performing clock tree synthesis...
+[INFO]: Looking for the following net(s): CLK
+[INFO]: Running Clock Tree Synthesis...
+[INFO CTS-0049] Characterization buffer is: sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0038] Number of created patterns = 50000.
+[INFO CTS-0038] Number of created patterns = 100000.
+[INFO CTS-0039] Number of created patterns = 141984.
+[INFO CTS-0084] Compiling LUT.
+Min. len    Max. len    Min. cap    Max. cap    Min. slew   Max. slew
+2           8           1           34          1           12          
+[WARNING CTS-0043] 4896 wires are pure wire and no slew degradation.
+TritonCTS forced slew degradation on these wires.
+[INFO CTS-0046]     Number of wire segments: 57096.
+[INFO CTS-0047]     Number of keys in characterization LUT: 1492.
+[INFO CTS-0048]     Actual min input cap: 1.
+[INFO CTS-0007] Net "CLK" found for clock "CLK".
+[WARNING CTS-0041] Net "CLK" has 0 sinks. Skipping...
+[WARNING CTS-0083] No clock nets have been found.
+[INFO CTS-0008] TritonCTS found 0 clock nets.
+[WARNING CTS-0082] No valid clock nets in the design.
+[INFO]: Repairing long wires on clock nets...
+[INFO RSZ-0058] Using max wire length 3048um.
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/cts/buff_chain.odb'…
+Writing layout to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/cts/buff_chain.def'…
+Writing timing constraints to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/cts/buff_chain.sdc'…
+[INFO]: Legalizing...
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL             477.3 u
+legalized HPWL            485.9 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 3 instances
+[INFO DPL-0021] HPWL before             485.9 u
+[INFO DPL-0022] HPWL after              477.3 u
+[INFO DPL-0023] HPWL delta               -1.8 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/cts/buff_chain.odb'…
+Writing layout to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/cts/buff_chain.def'…
+Writing timing constraints to '/openlane/designs/buffer_chain/runs/RUN_2023.05.14_23.26.21/results/cts/buff_chain.sdc'…
+cts_report
+[INFO CTS-0003] Total number of Clock Roots: 0.
+[INFO CTS-0004] Total number of Buffers Inserted: 0.
+[INFO CTS-0005] Total number of Clock Subnets: 0.
+[INFO CTS-0006] Total number of Sinks: 0.
+cts_report_end
