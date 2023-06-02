@@ -2,6 +2,7 @@ CVC: Log output to /openlane/designs/spm/runs/openlane_test/reports/signoff/spm.
 CVC: Error output to /openlane/designs/spm/runs/openlane_test/reports/signoff/spm.rpt.error.gz
 CVC: Debug output to /openlane/designs/spm/runs/openlane_test/reports/signoff/spm.rpt.debug.gz
 CVC: Circuit Validation Check  Version 1.1.4
+<<<<<<< HEAD
 CVC: Start: Tue May 16 02:14:32 2023
 
 Using the following parameters for CVC (Circuit Validation Check) from /home/nickweiss425/.volare/sky130A/libs.tech/openlane/cvc/cvcrc
@@ -9,6 +10,15 @@ CVC_TOP = 'spm'
 CVC_NETLIST = '/openlane/designs/spm/runs/openlane_test/tmp/signoff/spm.cdl'
 CVC_MODE = 'spm'
 CVC_MODEL_FILE = '/home/nickweiss425/.volare/sky130A/libs.tech/openlane/cvc/models'
+=======
+CVC: Start: Thu May 18 23:45:52 2023
+
+Using the following parameters for CVC (Circuit Validation Check) from /root/.volare/sky130A/libs.tech/openlane/cvc/cvcrc
+CVC_TOP = 'spm'
+CVC_NETLIST = '/openlane/designs/spm/runs/openlane_test/tmp/signoff/spm.cdl'
+CVC_MODE = 'spm'
+CVC_MODEL_FILE = '/root/.volare/sky130A/libs.tech/openlane/cvc/models'
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 CVC_POWER_FILE = '/openlane/designs/spm/runs/openlane_test/tmp/signoff/spm.power'
 CVC_FUSE_FILE = ''
 CVC_REPORT_FILE = '/openlane/designs/spm/runs/openlane_test/reports/signoff/spm.rpt'
@@ -47,5 +57,9 @@ CVC: Reading device model settings...
 CVC: Reading power settings...
 CVC: Parsing netlist /openlane/designs/spm/runs/openlane_test/tmp/signoff/spm.cdl
 Cdl fixed data size 33047
+<<<<<<< HEAD
 Usage CDL: Time: 0  Memory: 14952  I/O: 4160  Swap: 0
+=======
+Usage CDL: Time: 0  Memory: 13144  I/O: 8  Swap: 0
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 CVC: Counting and linking...

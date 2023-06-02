@@ -552,8 +552,13 @@ mapping tbuf
 
 48. Executing TECHMAP pass (map to technology primitives).
 
+<<<<<<< HEAD
 48.1. Executing Verilog-2005 frontend: /home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
 Parsing Verilog input from `/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+=======
+48.1. Executing Verilog-2005 frontend: /root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 Generating RTLIL representation for module `\$_TBUF_'.
 Successfully finished Verilog frontend.
 
@@ -565,8 +570,13 @@ No more expansions possible.
 
 50. Executing TECHMAP pass (map to technology primitives).
 
+<<<<<<< HEAD
 50.1. Executing Verilog-2005 frontend: /home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
 Parsing Verilog input from `/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+=======
+50.1. Executing Verilog-2005 frontend: /root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 Generating RTLIL representation for module `\$_DLATCH_P_'.
 Generating RTLIL representation for module `\$_DLATCH_N_'.
 Successfully finished Verilog frontend.
@@ -631,6 +641,7 @@ Mapping DFF cells in module `\spm':
 
 54. Executing ABC pass (technology mapping using ABC).
 
+<<<<<<< HEAD
 54.1. Extracting gate netlist of module `\spm' to `/tmp/yosys-abc-oEycDO/input.blif'..
 Extracted 253 gates and 350 wires to a netlist network with 97 inputs and 128 outputs.
 
@@ -641,6 +652,18 @@ ABC:
 ABC: + read_blif /tmp/yosys-abc-oEycDO/input.blif 
 ABC: + read_lib -w /openlane/designs/spm/runs/openlane_test/tmp/synthesis/trimmed.lib 
 ABC: Parsing finished successfully.  Parsing time =     0.11 sec
+=======
+54.1. Extracting gate netlist of module `\spm' to `/tmp/yosys-abc-JDukMm/input.blif'..
+Extracted 253 gates and 350 wires to a netlist network with 97 inputs and 128 outputs.
+
+54.1.1. Executing ABC.
+Running ABC command: "/build/bin/yosys-abc" -s -f /tmp/yosys-abc-JDukMm/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-JDukMm/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-JDukMm/input.blif 
+ABC: + read_lib -w /openlane/designs/spm/runs/openlane_test/tmp/synthesis/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.03 sec
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
@@ -658,8 +681,13 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+<<<<<<< HEAD
 ABC: Library "sky130A_merged" from "/openlane/designs/spm/runs/openlane_test/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.20 sec
 ABC: Memory =    9.54 MB. Time =     0.20 sec
+=======
+ABC: Library "sky130A_merged" from "/openlane/designs/spm/runs/openlane_test/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.04 sec
+ABC: Memory =    9.54 MB. Time =     0.04 sec
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
 ABC: + read_constr -v /openlane/designs/spm/runs/openlane_test/tmp/synthesis/synthesis.sdc 
 ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
@@ -740,7 +768,11 @@ ABC: Path  4 --     231 : 4    1 sky130_fd_sc_hd__a31o_2 A =   8.76  Df =1378.3 
 ABC: Start-point = pi2 (\y).  End-point = po0 ($abc$376$flatten\csa0.$0\sc[0:0]).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =   97/  128  lat =    0  nd =   237  edge =    459  area =2029.70  delay = 4.00  lev = 4
+<<<<<<< HEAD
 ABC: + write_blif /tmp/yosys-abc-oEycDO/output.blif 
+=======
+ABC: + write_blif /tmp/yosys-abc-JDukMm/output.blif 
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 
 54.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:        1
@@ -804,6 +836,12 @@ Found and reported 1 problems.
 Dumping module `\spm'.
 
 Warnings: 1 unique messages, 1 total
+<<<<<<< HEAD
 End of script. Logfile hash: c29285772f, CPU: user 1.87s system 0.15s, MEM: 29.18 MB peak
 Yosys 0.27+30 (git sha1 101075611fc, gcc 8.3.1 -fPIC -Os)
 Time spent: 37% 2x abc (1 sec), 15% 1x dfflibmap (0 sec), ...
+=======
+End of script. Logfile hash: e06a7f048a, CPU: user 0.29s system 0.00s, MEM: 29.29 MB peak
+Yosys 0.27+30 (git sha1 101075611fc, gcc 8.3.1 -fPIC -Os)
+Time spent: 41% 2x abc (0 sec), 11% 15x opt_expr (0 sec), ...
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224

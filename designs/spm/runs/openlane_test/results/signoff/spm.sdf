@@ -1,7 +1,11 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "spm")
+<<<<<<< HEAD
  (DATE "Tue May 16 02:12:11 2023")
+=======
+ (DATE "Thu May 18 23:45:33 2023")
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")

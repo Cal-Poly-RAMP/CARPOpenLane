@@ -28,7 +28,11 @@ Creating placeholder cell definition for module sky130_fd_sc_hd__inv_2.
 Creating placeholder cell definition for module sky130_fd_sc_hd__dfrtp_1.
 Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_16.
 Creating placeholder cell definition for module sky130_fd_sc_hd__dlymetal6s2s_1.
+<<<<<<< HEAD
 Reading setup file /home/nickweiss425/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl
+=======
+Reading setup file /root/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 Comparison output logged to file /openlane/designs/spm/runs/openlane_test/logs/signoff/39-spm.lef.lvs.log
 Logging to file "/openlane/designs/spm/runs/openlane_test/logs/signoff/39-spm.lef.lvs.log" enabled
 

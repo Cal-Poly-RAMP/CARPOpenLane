@@ -4,9 +4,15 @@ set ::env(ANTENNA_VIOLATOR_LIST) "/openlane/designs/spm/runs/openlane_test/repor
 set ::env(BASE_SDC_FILE) "/openlane/scripts/base.sdc"
 set ::env(BASIC_PREP_COMPLETE) "1"
 set ::env(BOTTOM_MARGIN_MULT) "4"
+<<<<<<< HEAD
 set ::env(CARRY_SELECT_ADDER_MAP) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/csa_map.v"
 set ::env(CELLS_LEF) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef"
 set ::env(CELLS_LEF_OPT) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef"
+=======
+set ::env(CARRY_SELECT_ADDER_MAP) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/csa_map.v"
+set ::env(CELLS_LEF) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef"
+set ::env(CELLS_LEF_OPT) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(CELL_CLK_PORT) "CLK"
 set ::env(CELL_PAD_EXCLUDE) "sky130_fd_sc_hd__tap* sky130_fd_sc_hd__decap* sky130_ef_sc_hd__decap* sky130_fd_sc_hd__fill*"
 set ::env(CLK_BUFFER) "sky130_fd_sc_hd__clkbuf_4"
@@ -49,7 +55,11 @@ set ::env(CURRENT_SDC) "/openlane/designs/spm/runs/openlane_test/tmp/17-spm.sdc"
 set ::env(CURRENT_SDF) "/openlane/designs/spm/runs/openlane_test/results/routing/mca/process_corner_nom/spm.sdf"
 set ::env(CURRENT_SPEF) "/openlane/designs/spm/runs/openlane_test/results/routing/mca/process_corner_nom/spm.spef"
 set ::env(CURRENT_STEP) ""
+<<<<<<< HEAD
 set ::env(CVC_SCRIPTS_DIR) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/cvc"
+=======
+set ::env(CVC_SCRIPTS_DIR) "/root/.volare/sky130A/libs.tech/openlane/cvc"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(DATA_WIRE_RC_LAYER) "met2"
 set ::env(DECAP_CELL) "sky130_ef_sc_hd__decap_12 sky130_fd_sc_hd__decap_8 sky130_fd_sc_hd__decap_6 sky130_fd_sc_hd__decap_4 sky130_fd_sc_hd__decap_3"
 set ::env(DEFAULT_MAX_TRAN) "0.75"
@@ -67,8 +77,13 @@ set ::env(DIODE_PADDING) "2"
 set ::env(DONT_USE_CELLS) "sky130_fd_sc_hd__a2111oi_0 sky130_fd_sc_hd__a21boi_0 sky130_fd_sc_hd__and2_0 sky130_fd_sc_hd__buf_16 sky130_fd_sc_hd__clkdlybuf4s15_1 sky130_fd_sc_hd__clkdlybuf4s18_1 sky130_fd_sc_hd__fa_4 sky130_fd_sc_hd__lpflow_bleeder_1 sky130_fd_sc_hd__lpflow_clkbufkapwr_1 sky130_fd_sc_hd__lpflow_clkbufkapwr_16 sky130_fd_sc_hd__lpflow_clkbufkapwr_2 sky130_fd_sc_hd__lpflow_clkbufkapwr_4 sky130_fd_sc_hd__lpflow_clkbufkapwr_8 sky130_fd_sc_hd__lpflow_clkinvkapwr_1 sky130_fd_sc_hd__lpflow_clkinvkapwr_16 sky130_fd_sc_hd__lpflow_clkinvkapwr_2 sky130_fd_sc_hd__lpflow_clkinvkapwr_4 sky130_fd_sc_hd__lpflow_clkinvkapwr_8 sky130_fd_sc_hd__lpflow_decapkapwr_12 sky130_fd_sc_hd__lpflow_decapkapwr_3 sky130_fd_sc_hd__lpflow_decapkapwr_4 sky130_fd_sc_hd__lpflow_decapkapwr_6 sky130_fd_sc_hd__lpflow_decapkapwr_8 sky130_fd_sc_hd__lpflow_inputiso0n_1 sky130_fd_sc_hd__lpflow_inputiso0p_1 sky130_fd_sc_hd__lpflow_inputiso1n_1 sky130_fd_sc_hd__lpflow_inputiso1p_1 sky130_fd_sc_hd__lpflow_inputisolatch_1 sky130_fd_sc_hd__lpflow_isobufsrc_1 sky130_fd_sc_hd__lpflow_isobufsrc_16 sky130_fd_sc_hd__lpflow_isobufsrc_2 sky130_fd_sc_hd__lpflow_isobufsrc_4 sky130_fd_sc_hd__lpflow_isobufsrc_8 sky130_fd_sc_hd__lpflow_isobufsrckapwr_16 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4 sky130_fd_sc_hd__mux4_4 sky130_fd_sc_hd__o21ai_0 sky130_fd_sc_hd__o311ai_0 sky130_fd_sc_hd__or2_0 sky130_fd_sc_hd__probe_p_8 sky130_fd_sc_hd__probec_p_8 sky130_fd_sc_hd__xor3_1 sky130_fd_sc_hd__xor3_2 sky130_fd_sc_hd__xor3_4 sky130_fd_sc_hd__xnor3_1 sky130_fd_sc_hd__xnor3_2 sky130_fd_sc_hd__xnor3_4  "
 set ::env(DPL_CELL_PADDING) "0"
 set ::env(DRC_CURRENT_DEF) "/openlane/designs/spm/runs/openlane_test/tmp/signoff/36-spm.p.def"
+<<<<<<< HEAD
 set ::env(DRC_EXCLUDE_CELL_LIST) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells"
 set ::env(DRC_EXCLUDE_CELL_LIST_OPT) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells"
+=======
+set ::env(DRC_EXCLUDE_CELL_LIST) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells"
+set ::env(DRC_EXCLUDE_CELL_LIST_OPT) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(DRT_OPT_ITERS) "64"
 set ::env(EXT_NETLIST) "/openlane/designs/spm/runs/openlane_test/results/signoff/spm.spice"
 set ::env(FAKEDIODE_CELL) "sky130_ef_sc_hd__fakediode_2"
@@ -123,9 +138,15 @@ set ::env(FP_TAPCELL_DIST) "13"
 set ::env(FP_TAP_HORIZONTAL_HALO) "10"
 set ::env(FP_TAP_VERTICAL_HALO) "10"
 set ::env(FP_WELLTAP_CELL) "sky130_fd_sc_hd__tapvpwrvgnd_1"
+<<<<<<< HEAD
 set ::env(FULL_ADDER_MAP) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/fa_map.v"
 set ::env(GDS_FILES) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds"
 set ::env(GDS_FILES_OPT) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds"
+=======
+set ::env(FULL_ADDER_MAP) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/fa_map.v"
+set ::env(GDS_FILES) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds"
+set ::env(GDS_FILES_OPT) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(GENERATE_FINAL_SUMMARY_REPORT) "1"
 set ::env(GLB_CFG_FILE) "/openlane/designs/spm/runs/openlane_test/config.tcl"
 set ::env(GLB_OPTIMIZE_MIRRORING) "1"
@@ -144,10 +165,17 @@ set ::env(GND_NET) "VGND"
 set ::env(GND_NETS) "VGND"
 set ::env(GND_PIN) "VGND"
 set ::env(GND_PIN_VOLTAGE) "0.00"
+<<<<<<< HEAD
 set ::env(GPIO_PADS_LEF) " /home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef /home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_io/lef/sky130_ef_io.lef "
 set ::env(GPIO_PADS_LEF_CORE_SIDE) " /home/nickweiss425/.volare/sky130A/libs.tech/openlane/custom_cells/lef/sky130_fd_io_core.lef /home/nickweiss425/.volare/sky130A/libs.tech/openlane/custom_cells/lef/sky130_ef_io_core.lef "
 set ::env(GPIO_PADS_PREFIX) "sky130_fd_io sky130_ef_io"
 set ::env(GPIO_PADS_VERILOG) " /home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v
+=======
+set ::env(GPIO_PADS_LEF) " /root/.volare/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef /root/.volare/sky130A/libs.ref/sky130_fd_io/lef/sky130_ef_io.lef "
+set ::env(GPIO_PADS_LEF_CORE_SIDE) " /root/.volare/sky130A/libs.tech/openlane/custom_cells/lef/sky130_fd_io_core.lef /root/.volare/sky130A/libs.tech/openlane/custom_cells/lef/sky130_ef_io_core.lef "
+set ::env(GPIO_PADS_PREFIX) "sky130_fd_io sky130_ef_io"
+set ::env(GPIO_PADS_VERILOG) " /root/.volare/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 "
 set ::env(GPL_CELL_PADDING) "0"
 set ::env(GRT_ADJUSTMENT) "0.3"
@@ -164,11 +192,19 @@ set ::env(HEURISTIC_ANTENNA_INSERTION_MODE) "source"
 set ::env(HEURISTIC_ANTENNA_THRESHOLD) "90"
 set ::env(IO_PCT) "0.2"
 set ::env(IO_READ_DEF) "0"
+<<<<<<< HEAD
 set ::env(KLAYOUT_DEF_LAYER_MAP) "/home/nickweiss425/.volare/sky130A/libs.tech/klayout/tech/sky130A.map"
 set ::env(KLAYOUT_DRC_KLAYOUT_GDS) "0"
 set ::env(KLAYOUT_DRC_TECH_SCRIPT) "/home/nickweiss425/.volare/sky130A/libs.tech/klayout/drc/sky130A_mr.drc"
 set ::env(KLAYOUT_PROPERTIES) "/home/nickweiss425/.volare/sky130A/libs.tech/klayout/tech/sky130A.lyp"
 set ::env(KLAYOUT_TECH) "/home/nickweiss425/.volare/sky130A/libs.tech/klayout/tech/sky130A.lyt"
+=======
+set ::env(KLAYOUT_DEF_LAYER_MAP) "/root/.volare/sky130A/libs.tech/klayout/tech/sky130A.map"
+set ::env(KLAYOUT_DRC_KLAYOUT_GDS) "0"
+set ::env(KLAYOUT_DRC_TECH_SCRIPT) "/root/.volare/sky130A/libs.tech/klayout/drc/sky130A_mr.drc"
+set ::env(KLAYOUT_PROPERTIES) "/root/.volare/sky130A/libs.tech/klayout/tech/sky130A.lyp"
+set ::env(KLAYOUT_TECH) "/root/.volare/sky130A/libs.tech/klayout/tech/sky130A.lyt"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(KLAYOUT_XOR_GDS) "1"
 set ::env(KLAYOUT_XOR_IGNORE_LAYERS) "81/14"
 set ::env(KLAYOUT_XOR_THREADS) "1"
@@ -177,6 +213,7 @@ set ::env(LAST_TIMING_REPORT_TAG) "/openlane/designs/spm/runs/openlane_test/repo
 set ::env(LEC_ENABLE) "0"
 set ::env(LEFT_MARGIN_MULT) "12"
 set ::env(LIB_CTS) "/openlane/designs/spm/runs/openlane_test/tmp/cts/cts.lib"
+<<<<<<< HEAD
 set ::env(LIB_FASTEST) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
 set ::env(LIB_SLOWEST) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
 set ::env(LIB_SLOWEST_OPT) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
@@ -186,6 +223,17 @@ set ::env(LIB_SYNTH_COMPLETE_NO_PG) "/openlane/designs/spm/runs/openlane_test/tm
 set ::env(LIB_SYNTH_MERGED) "/openlane/designs/spm/runs/openlane_test/tmp/synthesis/merged.lib"
 set ::env(LIB_SYNTH_NO_PG) "/openlane/designs/spm/runs/openlane_test/tmp/synthesis/1-trimmed.no_pg.lib"
 set ::env(LIB_TYPICAL) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+=======
+set ::env(LIB_FASTEST) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+set ::env(LIB_SLOWEST) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+set ::env(LIB_SLOWEST_OPT) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+set ::env(LIB_SYNTH) "/openlane/designs/spm/runs/openlane_test/tmp/synthesis/trimmed.lib"
+set ::env(LIB_SYNTH_COMPLETE) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+set ::env(LIB_SYNTH_COMPLETE_NO_PG) "/openlane/designs/spm/runs/openlane_test/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+set ::env(LIB_SYNTH_MERGED) "/openlane/designs/spm/runs/openlane_test/tmp/synthesis/merged.lib"
+set ::env(LIB_SYNTH_NO_PG) "/openlane/designs/spm/runs/openlane_test/tmp/synthesis/1-trimmed.no_pg.lib"
+set ::env(LIB_TYPICAL) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(LOGS_DIR) "/openlane/designs/spm/runs/openlane_test/logs"
 set ::env(LVS_CONNECT_BY_LABEL) "0"
 set ::env(LVS_CURRENT_DEF) "/openlane/designs/spm/runs/openlane_test/results/routing/spm.def"
@@ -205,9 +253,15 @@ set ::env(MAGIC_GENERATE_LEF) "1"
 set ::env(MAGIC_GENERATE_MAGLEF) "1"
 set ::env(MAGIC_INCLUDE_GDS_POINTERS) "0"
 set ::env(MAGIC_LEF_WRITE_USE_GDS) "1"
+<<<<<<< HEAD
 set ::env(MAGIC_MAGICRC) "/home/nickweiss425/.volare/sky130A/libs.tech/magic/sky130A.magicrc"
 set ::env(MAGIC_PAD) "0"
 set ::env(MAGIC_TECH_FILE) "/home/nickweiss425/.volare/sky130A/libs.tech/magic/sky130A.tech"
+=======
+set ::env(MAGIC_MAGICRC) "/root/.volare/sky130A/libs.tech/magic/sky130A.magicrc"
+set ::env(MAGIC_PAD) "0"
+set ::env(MAGIC_TECH_FILE) "/root/.volare/sky130A/libs.tech/magic/sky130A.tech"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(MAGIC_WRITE_FULL_LEF) "0"
 set ::env(MAGIC_ZEROIZE_ORIGIN) "0"
 set ::env(MAGTYPE) "maglef"
@@ -217,6 +271,7 @@ set ::env(MC_SPEF_DIR) "/openlane/designs/spm/runs/openlane_test/results/routing
 set ::env(MERGED_LEF) "/openlane/designs/spm/runs/openlane_test/tmp/merged.nom.lef"
 set ::env(MERGED_LEF_MAX) "/openlane/designs/spm/runs/openlane_test/tmp/merged.max.lef"
 set ::env(MERGED_LEF_MIN) "/openlane/designs/spm/runs/openlane_test/tmp/merged.min.lef"
+<<<<<<< HEAD
 set ::env(NETGEN_SETUP_FILE) "/home/nickweiss425/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl"
 set ::env(NO_SYNTH_CELL_LIST) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/no_synth.cells"
 set ::env(OPENLANE_VERBOSE) "0"
@@ -224,6 +279,15 @@ set ::env(OPENLANE_VERSION) "5db8cf043ba773241d581da94782e4cb6dd2a58d"
 set ::env(PARSITICS_CURRENT_DEF) "/openlane/designs/spm/runs/openlane_test/results/routing/spm.def"
 set ::env(PDK) "sky130A"
 set ::env(PDKPATH) "/home/nickweiss425/.volare/sky130A"
+=======
+set ::env(NETGEN_SETUP_FILE) "/root/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl"
+set ::env(NO_SYNTH_CELL_LIST) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/no_synth.cells"
+set ::env(OPENLANE_VERBOSE) "0"
+set ::env(OPENLANE_VERSION) "f47932ff5e9f85d92545ee97e92f9313c740feb8"
+set ::env(PARSITICS_CURRENT_DEF) "/openlane/designs/spm/runs/openlane_test/results/routing/spm.def"
+set ::env(PDK) "sky130A"
+set ::env(PDKPATH) "/root/.volare/sky130A"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(PLACEMENT_CURRENT_DEF) "/openlane/designs/spm/runs/openlane_test/results/floorplan/spm.def"
 set ::env(PLACE_SITE) "unithd"
 set ::env(PLACE_SITE_HEIGHT) "2.720"
@@ -232,7 +296,11 @@ set ::env(PL_BASIC_PLACEMENT) "0"
 set ::env(PL_ESTIMATE_PARASITICS) "1"
 set ::env(PL_INIT_COEFF) "0.00002"
 set ::env(PL_IO_ITER) "5"
+<<<<<<< HEAD
 set ::env(PL_LIB) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+=======
+set ::env(PL_LIB) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(PL_MACRO_CHANNEL) "0 0"
 set ::env(PL_MACRO_HALO) "0 0"
 set ::env(PL_MAX_DISPLACEMENT_X) "500"
@@ -277,15 +345,25 @@ set ::env(QUIT_ON_VERILATOR_ERRORS) "1"
 set ::env(QUIT_ON_VERILATOR_WARNINGS) "0"
 set ::env(QUIT_ON_XOR_ERROR) "1"
 set ::env(RCX_MERGE_VIA_WIRE_RES) "1"
+<<<<<<< HEAD
 set ::env(RCX_RULES) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.calibre"
 set ::env(RCX_RULES_MAX) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre"
 set ::env(RCX_RULES_MIN) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre"
+=======
+set ::env(RCX_RULES) "/root/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.calibre"
+set ::env(RCX_RULES_MAX) "/root/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre"
+set ::env(RCX_RULES_MIN) "/root/.volare/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(RCX_SDC_FILE) "/openlane/designs/spm/runs/openlane_test/tmp/17-spm.sdc"
 set ::env(REPORTS_DIR) "/openlane/designs/spm/runs/openlane_test/reports"
 set ::env(RESULTS_DIR) "/openlane/designs/spm/runs/openlane_test/results"
 set ::env(RE_BUFFER_CELL) "sky130_fd_sc_hd__buf_4"
 set ::env(RIGHT_MARGIN_MULT) "12"
+<<<<<<< HEAD
 set ::env(RIPPLE_CARRY_ADDER_MAP) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/rca_map.v"
+=======
+set ::env(RIPPLE_CARRY_ADDER_MAP) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/rca_map.v"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(ROOT_CLK_BUFFER) "sky130_fd_sc_hd__clkbuf_16"
 set ::env(ROUTING_CORES) "2"
 set ::env(ROUTING_CURRENT_DEF) "/openlane/designs/spm/runs/openlane_test/tmp/cts/14-spm.resized.def"
@@ -312,18 +390,30 @@ set ::env(RUN_STANDALONE) "1"
 set ::env(RUN_TAG) "openlane_test"
 set ::env(RUN_TAP_DECAP_INSERTION) "1"
 set ::env(RUN_VERILATOR) "1"
+<<<<<<< HEAD
 set ::env(SCLPATH) "/home/nickweiss425/.volare/sky130A/sky130_fd_sc_hd"
 set ::env(SPEF_EXTRACTOR) "openrcx"
 set ::env(START_TIME) "2023.05.16_02.08.18"
+=======
+set ::env(SCLPATH) "/root/.volare/sky130A/sky130_fd_sc_hd"
+set ::env(SPEF_EXTRACTOR) "openrcx"
+set ::env(START_TIME) "2023.05.18_23.45.08"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(STA_MULTICORNER_READ_LIBS) "0"
 set ::env(STA_PRE_CTS) "0"
 set ::env(STA_REPORT_POWER) "1"
 set ::env(STA_WRITE_LIB) "1"
 set ::env(STD_CELL_GROUND_PINS) "VGND VNB"
 set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
+<<<<<<< HEAD
 set ::env(STD_CELL_LIBRARY_CDL) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl"
 set ::env(STD_CELL_LIBRARY_OPT) "sky130_fd_sc_hd"
 set ::env(STD_CELL_LIBRARY_OPT_CDL) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl"
+=======
+set ::env(STD_CELL_LIBRARY_CDL) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl"
+set ::env(STD_CELL_LIBRARY_OPT) "sky130_fd_sc_hd"
+set ::env(STD_CELL_LIBRARY_OPT_CDL) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(STD_CELL_POWER_PINS) "VPWR VPB"
 set ::env(SYNTH_ADDER_TYPE) "YOSYS"
 set ::env(SYNTH_BIN) "yosys"
@@ -337,12 +427,21 @@ set ::env(SYNTH_DRIVING_CELL_PIN) "Y"
 set ::env(SYNTH_ELABORATE_ONLY) "0"
 set ::env(SYNTH_EXTRA_MAPPING_FILE) ""
 set ::env(SYNTH_FLAT_TOP) "0"
+<<<<<<< HEAD
 set ::env(SYNTH_LATCH_MAP) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v"
 set ::env(SYNTH_MAX_FANOUT) "10"
 set ::env(SYNTH_MAX_TRAN) "0.75"
 set ::env(SYNTH_MIN_BUF_PORT) "sky130_fd_sc_hd__buf_2 A X"
 set ::env(SYNTH_MUX4_MAP) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v"
 set ::env(SYNTH_MUX_MAP) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v"
+=======
+set ::env(SYNTH_LATCH_MAP) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v"
+set ::env(SYNTH_MAX_FANOUT) "10"
+set ::env(SYNTH_MAX_TRAN) "0.75"
+set ::env(SYNTH_MIN_BUF_PORT) "sky130_fd_sc_hd__buf_2 A X"
+set ::env(SYNTH_MUX4_MAP) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v"
+set ::env(SYNTH_MUX_MAP) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(SYNTH_NO_FLAT) "0"
 set ::env(SYNTH_OPT) "0"
 set ::env(SYNTH_READ_BLACKBOX_LIB) "0"
@@ -354,17 +453,30 @@ set ::env(SYNTH_TIEHI_PORT) "sky130_fd_sc_hd__conb_1 HI"
 set ::env(SYNTH_TIELO_PORT) "sky130_fd_sc_hd__conb_1 LO"
 set ::env(SYNTH_TIMING_DERATE) "0.05"
 set ::env(TAKE_LAYOUT_SCROT) "0"
+<<<<<<< HEAD
 set ::env(TECH_LEF) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
 set ::env(TECH_LEF_MAX) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef"
 set ::env(TECH_LEF_MIN) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef"
 set ::env(TECH_LEF_OPT) "/home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+=======
+set ::env(TECH_LEF) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+set ::env(TECH_LEF_MAX) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef"
+set ::env(TECH_LEF_MIN) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef"
+set ::env(TECH_LEF_OPT) "/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(TECH_METAL_LAYERS) "li1 met1 met2 met3 met4 met5"
 set ::env(TERMINAL_OUTPUT) "/dev/null"
 set ::env(TMP_DIR) "/openlane/designs/spm/runs/openlane_test/tmp"
 set ::env(TOP_MARGIN_MULT) "4"
+<<<<<<< HEAD
 set ::env(TRACKS_INFO_FILE) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info"
 set ::env(TRACKS_INFO_FILE_PROCESSED) "/openlane/designs/spm/runs/openlane_test/tmp/routing/config.tracks"
 set ::env(TRISTATE_BUFFER_MAP) "/home/nickweiss425/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v"
+=======
+set ::env(TRACKS_INFO_FILE) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info"
+set ::env(TRACKS_INFO_FILE_PROCESSED) "/openlane/designs/spm/runs/openlane_test/tmp/routing/config.tracks"
+set ::env(TRISTATE_BUFFER_MAP) "/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 set ::env(TRISTATE_CELL_PREFIX) "sky130_fd_sc_hd__ebuf"
 set ::env(USE_ARC_ANTENNA_CHECK) "1"
 set ::env(USE_GPIO_PADS) "0"
@@ -406,6 +518,12 @@ set ::env(synthesis_logs) "/openlane/designs/spm/runs/openlane_test/logs/synthes
 set ::env(synthesis_reports) "/openlane/designs/spm/runs/openlane_test/reports/synthesis"
 set ::env(synthesis_results) "/openlane/designs/spm/runs/openlane_test/results/synthesis"
 set ::env(synthesis_tmpfiles) "/openlane/designs/spm/runs/openlane_test/tmp/synthesis"
+<<<<<<< HEAD
 set ::env(timer_end) "1684203272"
 set ::env(timer_routed) "1684203201"
 set ::env(timer_start) "1684202898"
+=======
+set ::env(timer_end) "1684453553"
+set ::env(timer_routed) "1684453542"
+set ::env(timer_start) "1684453508"
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224

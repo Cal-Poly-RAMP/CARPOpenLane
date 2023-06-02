@@ -1,7 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
+<<<<<<< HEAD
 timestamp 1684203246
+=======
+timestamp 1684453548
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 << viali >>
 rect 15669 20009 15703 20043
 rect 1869 19941 1903 19975

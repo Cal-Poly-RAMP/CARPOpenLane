@@ -18,7 +18,11 @@ To avoid this warning in the future, remove this statement from the LEF file wit
 [INFO ODB-0133]     Created 380 nets and 1040 connections.
 [INFO ODB-0134] Finished DEF file: /openlane/designs/spm/runs/openlane_test/tmp/signoff/36-spm.p.def
 define_corners Typical
+<<<<<<< HEAD
 read_liberty -corner Typical /home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+=======
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 Setting global connections for newly added cells…
 [WARNING] Did not save OpenROAD database!
 Writing netlist to '/openlane/designs/spm/runs/openlane_test/tmp/signoff/36-spm.nl.v'…

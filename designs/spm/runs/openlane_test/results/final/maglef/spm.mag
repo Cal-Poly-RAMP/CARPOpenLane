@@ -1,7 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
+<<<<<<< HEAD
 timestamp 1684203250
+=======
+timestamp 1684453549
+>>>>>>> bf7f91c982c75fda76705eacd77a6dbdc30e4224
 << obsli1 >>
 rect 1104 2159 19228 20145
 << obsm1 >>
