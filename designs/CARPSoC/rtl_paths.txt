@@ -1,0 +1,10 @@
+$HOME/clam-soc/carp-lib/obi-mux/obi_mux_2_to_1.sv
+$HOME/clam-soc/carp-lib/wishbone-obi-adapter/*.sv
+$HOME/clam-soc/core/rtl/core/modules/*.sv
+$HOME/clam-soc/core/rtl/core/core.sv
+$HOME/clam-soc/core/rtl/wrapper_modules/*.sv
+$HOME/clam-soc/peripherals/Peripheral_Interrupt_Queue.sv
+$HOME/clam-soc/peripherals/Peripheral_Unit/*.sv
+$HOME/clam-soc/qspiflash/rtl/*.v
+$HOME/clam-soc/rtl/soc/soc.sv
+$HOME/clam-soc/rtl/soc/modules/*.sv

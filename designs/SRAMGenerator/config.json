@@ -1,0 +1,85 @@
+{
+"DESIGN_NAME": "sram_wrap",
+        "VERILOG_FILES": "./designs/SRAMGenerator/src/sramgen.sv",
+    
+	"CLOCK_PORT": "clk_i",
+	"CLOCK_PERIOD": 12,
+	"GRT_ESTIMATE_PARASITICS": 1,
+	"CLOCK_NET": "ref::$CLOCK_PORT",
+    "FP_PIN_ORDER_CFG": "./designs/SRAMGenerator/pin_order.cfg",
+    "FP_PDN_SKIPTRIM": true,
+	"FP_PDN_AUTO_ADJUST": true,
+	"FP_SIZING": "absolute",
+	"DIE_AREA": "0 0 2920 3520",
+	"PL_RESIZER_ALLOW_SETUP_VIOS": 1,
+	"GLB_RESIZER_ALLOW_SETUP_VIOS":1,
+
+	"ROUTING_CORES": 1,
+        "PL_WIRELENGTH_COEF": 0.2,
+	"SYNTH_MAX_FANOUT": 30,
+	"CLOCK_BUFFER_FANOUT": 30,
+	"FP_PDN_VPITCH": 180,
+	"FP_PDN_HPITCH": 180,
+	 "LEFT_MARGIN_MULT": 8,
+         "RIGHT_MARGIN_MULT": 8,
+
+	"SYNTH_MAX_FANOUT": 30,
+	"CLOCK_BUFFER_FANOUT": 30,
+	"GRT_ANT_MARGIN": 30,
+	"GRT_MAX_DIODE_INS_ITERS": 10,
+	
+    "pdk::sky130*": {
+        "FP_CORE_UTIL": 50,
+        "scl::sky130_fd_sc_hd": {
+            "CLOCK_PERIOD": 12
+        },
+        "scl::sky130_fd_sc_hdll": {
+            "CLOCK_PERIOD": 12
+        },
+        "scl::sky130_fd_sc_hs": {
+            "CLOCK_PERIOD": 12
+        },
+        "scl::sky130_fd_sc_ls": {
+            "CLOCK_PERIOD": 12,
+            "SYNTH_MAX_FANOUT": 5
+        },
+        "scl::sky130_fd_sc_ms": {
+            "CLOCK_PERIOD": 12
+        }
+    },
+    "pdk::gf180mcuC": {
+        "CLOCK_PERIOD": 24.0,
+        "FP_CORE_UTIL": 40,
+        "SYNTH_MAX_FANOUT": 4,
+        "PL_TARGET_DENSITY": 0.5
+    },
+	
+	"VDD_NETS": "vccd1",
+  "GND_NETS": "vssd1",
+  "FP_PDN_MACRO_HOOKS": "sram1[0] vccd1 vssd1 vccd1 vssd1 sram1[1] vccd1 vssd1 vccd1 vssd1",
+  "VERILOG_FILES_BLACKBOX": "./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v",
+  "EXTRA_LEFS": "./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.lef",
+  "EXTRA_LIBS": "./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib",
+  "EXTRA_GDS_FILES": "./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.gds",
+  "GRT_ALLOW_CONGESTION": 0,
+  "MAGIC_DRC_USE_GDS": false,
+  "QUIT_ON_MAGIC_DRC": false,
+  "PL_RESIZER_ALLOW_SETUP_VIOS": 1,
+  "GLB_RESIZER_ALLOW_SETUP_VIOS": 1,
+  "PL_RESIZER_HOLD_MAX_BUFFER_PERCENT": 70,
+  "GLB_RESIZER_HOLD_MAX_BUFFER_PERCENT": 70,
+  "PL_RESIZER_MAX_WIRE_LENGTH": 100,
+  "GLB_RESIZER_MAX_WIRE_LENGTH": 100,
+  "PL_RESIZER_MAX_CAP_MARGIN": 20,
+  "GLB_RESIZER_MAX_CAP_MARGIN": 30,
+  "PL_RESIZER_MAX_SLEW_MARGIN": 40,
+  "GLB_RESIZER_MAX_SLEW_MARGIN": 50,
+  "PL_RESIZER_HOLD_SLACK_MARGIN": 0.5,
+  "PL_RESIZER_SETUP_SLACK_MARGIN": 0.5,
+  "GLB_RESIZER_HOLD_SLACK_MARGIN": 0.5,
+  "GLB_RESIZER_SETUP_SLACK_MARGIN": 0.5,
+  "PL_WIRELENGTH_COEF": 0.04,
+  "SYNTH_MAX_FANOUT": 50,
+  "SYNTH_CAP_LOAD": 40.0
+	
+}

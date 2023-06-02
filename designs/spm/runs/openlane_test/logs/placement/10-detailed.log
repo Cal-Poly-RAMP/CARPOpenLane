@@ -1,0 +1,24 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/spm/runs/openlane_test/tmp/placement/9-resizer.odb'…
+define_corners Typical
+read_liberty -corner Typical /home/nickweiss425/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL            8380.9 u
+legalized HPWL           8667.0 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 165 instances
+[INFO DPL-0021] HPWL before            8667.0 u
+[INFO DPL-0022] HPWL after             8380.9 u
+[INFO DPL-0023] HPWL delta               -3.3 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/spm/runs/openlane_test/results/placement/spm.odb'…
+Writing netlist to '/openlane/designs/spm/runs/openlane_test/results/placement/spm.nl.v'…
+Writing powered netlist to '/openlane/designs/spm/runs/openlane_test/results/placement/spm.pnl.v'…
+Writing layout to '/openlane/designs/spm/runs/openlane_test/results/placement/spm.def'…

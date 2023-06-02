@@ -1,0 +1,6 @@
+%Warning-UNUSEDSIGNAL: //openlane/designs/spm/src/spm.v:23:20: Signal is not driven, nor used: 'xy'
+                                                             : ... In instance spm
+   23 |     wire[size-1:0] xy;
+      |                    ^~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.009
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
