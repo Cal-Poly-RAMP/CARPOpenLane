@@ -1,21 +1,12 @@
-
-        "DESIGN_NAME": "CARP_Final_SOC",
-        "VERILOG_FILES": "$HOME/clam-soc/carp-lib/obi-mux/obi_mux_2_to_1.sv 
-$HOME/clam-soc/carp-lib/wishbone-obi-adapter/*.sv 
-$HOME/clam-soc/core/rtl/core/modules/*.sv 
-$HOME/clam-soc/core/rtl/core/core.sv 
-$HOME/clam-soc/core/rtl/wrapper_modules/*.sv 
-$HOME/clam-soc/peripherals/Peripheral_Interrupt_Queue.sv 
-$HOME/clam-soc/peripherals/Peripheral_Unit/*.sv 
-$HOME/clam-soc/qspiflash/rtl/*.v 
-$HOME/clam-soc/rtl/soc/soc.sv 
-$HOME/clam-soc/rtl/soc/modules/*.sv",
+{
+        "DESIGN_NAME": "user_project_wrapper",
+        "VERILOG_FILES": "./designs/CARPSoC/src/*.v ./designs/CARPSoC/clam-soc/carp-lib/obi/*.sv ./designs/CARPSoC/clam-soc/carp-lib/obi_gpio/*.sv ./designs/CARPSoC/clam-soc/carp-lib/obi_qspi_controller/*.sv ./designs/CARPSoC/clam-soc/carp-lib/obi_qspi_controller/*.v ./designs/CARPSoC/clam-soc/core/include/*.svh ./designs/CARPSoC/clam-soc/core/rtl/core/modules/*.sv ./designs/CARPSoC/clam-soc/core/rtl/core/stages/*.sv ./designs/CARPSoC/clam-soc/core/rtl/core/core.sv ./designs/CARPSoC/clam-soc/core/rtl/wrapper_modules/*.sv ./designs/CARPSoC/clam-soc/peripherals/include/*.svh ./designs/CARPSoC/clam-soc/peripherals/*.sv ./designs/CARPSoC/clam-soc/peripherals/Peripheral_Unit/*.sv ./designs/CARPSoC/clam-soc/include/*.svh ./designs/CARPSoC/clam-soc/rtl/soc/soc.sv ./designs/CARPSoC/clam-soc/rtl/soc/modules/*.sv",
     
 	"CLOCK_PORT": "clk_i",
 	"CLOCK_PERIOD": 12,
 	"GRT_ESTIMATE_PARASITICS": 1,
 	"CLOCK_NET": "ref::$CLOCK_PORT",
-    "FP_PIN_ORDER_CFG": "FILL_IN",
+    "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "FP_PDN_SKIPTRIM": true,
 	"FP_PDN_AUTO_ADJUST": true,
 	"FP_SIZING": "absolute",
@@ -61,15 +52,15 @@ $HOME/clam-soc/rtl/soc/modules/*.sv",
         "FP_CORE_UTIL": 40,
         "SYNTH_MAX_FANOUT": 4,
         "PL_TARGET_DENSITY": 0.5
-    }
+    },
 	
 	"VDD_NETS": "vccd1",
   "GND_NETS": "vssd1",
-  "FP_PDN_MACRO_HOOKS": "buff vccd1 vssd1 vccd1 vssd1",
-  "VERILOG_FILES_BLACKBOX": "$HOME/CARPOpenLane/designs/CARPSoC/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v",
-  "EXTRA_LEFS": "$HOME/CARPOpenLane/designs/CARPSoC/macros/sky130_sram_2kbyte_1rw1r_32x512_8.lef",
-  "EXTRA_LIBS": "$HOME/CARPOpenLane/designs/CARPSoC/macros/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib",
-  "EXTRA_GDS_FILES": "$HOME/CARPOpenLane/designs/CARPSoC/macros/sky130_sram_2kbyte_1rw1r_32x512_8.gds",
+  "FP_PDN_MACRO_HOOKS": "sram1[0] vccd1 vssd1 vccd1 vssd1 sram11[1] vccd1 vssd1 vccd1 vssd1 sram1[2] vccd1 vssd1 vccd1 vssd1 sram1[3] vccd1 vssd1 vccd1 vssd1 sram1[4] vccd1 vssd1 vccd1 vssd1 sram1[5] vccd1 vssd1 vccd1 vssd1 sram1[6] vccd1 vssd1 vccd1 vssd1 sram1[7] vccd1 vssd1 vccd1 vssd1 sram1[8] vccd1 vssd1 vccd1 vssd1 sram1[9] vccd1 vssd1 vccd1 vssd1 sram1[10] vccd1 vssd1 vccd1 vssd1 sram1[11] vccd1 vssd1 vccd1 vssd1 sram1[12] vccd1 vssd1 vccd1 vssd1 sram1[13] vccd1 vssd1 vccd1 vssd1 sram1[14] vccd1 vssd1 vccd1 vssd1 sram1[15] vccd1 vssd1 vccd1 vssd1 sram1[16] vccd1 vssd1 vccd1 vssd1 sram1[17] vccd1 vssd1 vccd1 vssd1 sram1[18] vccd1 vssd1 vccd1 vssd1 sram1[19] vccd1 vssd1 vccd1 vssd1 sram1[20] vccd1 vssd1 vccd1 vssd1 sram1[21] vccd1 vssd1 vccd1 vssd1 sram1[22] vccd1 vssd1 vccd1 vssd1 sram1[23] vccd1 vssd1 vccd1 vssd1",
+  "VERILOG_FILES_BLACKBOX": "./designs/CARPSoC/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v",
+  "EXTRA_LEFS": "./designs/CARPSoC/macros/sky130_sram_2kbyte_1rw1r_32x512_8.lef",
+  "EXTRA_LIBS": "./designs/CARPSoC/macros/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib",
+  "EXTRA_GDS_FILES": "./designs/CARPSoC/macros/sky130_sram_2kbyte_1rw1r_32x512_8.gds",
   "GRT_ALLOW_CONGESTION": 0,
   "MAGIC_DRC_USE_GDS": false,
   "QUIT_ON_MAGIC_DRC": false,
@@ -77,8 +68,8 @@ $HOME/clam-soc/rtl/soc/modules/*.sv",
   "GLB_RESIZER_ALLOW_SETUP_VIOS": 1,
   "PL_RESIZER_HOLD_MAX_BUFFER_PERCENT": 70,
   "GLB_RESIZER_HOLD_MAX_BUFFER_PERCENT": 70,
-  "PL_RESIZER_MAX_WIRE_LENGTH": 100,
-  "GLB_RESIZER_MAX_WIRE_LENGTH": 100,
+  "PL_RESIZER_MAX_WIRE_LENGTH": 500,
+  "GLB_RESIZER_MAX_WIRE_LENGTH": 500,
   "PL_RESIZER_MAX_CAP_MARGIN": 20,
   "GLB_RESIZER_MAX_CAP_MARGIN": 30,
   "PL_RESIZER_MAX_SLEW_MARGIN": 40,
@@ -90,5 +81,4 @@ $HOME/clam-soc/rtl/soc/modules/*.sv",
   "PL_WIRELENGTH_COEF": 0.04,
   "SYNTH_MAX_FANOUT": 50,
   "SYNTH_CAP_LOAD": 40.0
-	
 }
