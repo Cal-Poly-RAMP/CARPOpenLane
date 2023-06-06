@@ -1,0 +1,3 @@
+[submodule "designs/CARPSoC/clam-soc"]
+	path = designs/CARPSoC/clam-soc
+	url = https://github.com/Cal-Poly-RAMP/clam-soc
