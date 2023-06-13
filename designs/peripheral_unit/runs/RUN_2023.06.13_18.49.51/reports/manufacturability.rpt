@@ -1,0 +1,19 @@
+Design Name: peripheral_unit
+Run Directory: /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/logs/signoff/39-peripheral_unit.lef.lvs.log
+Number of nets: 36387                      |Number of nets: 36387                      
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/logs/signoff/41-antenna.log
+Pin violations: 14
+Net violations: 14

@@ -1,0 +1,120 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/placement/peripheral_unit.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/tmp/cts/cts.lib
+[INFO]: Setting RC values...
+[INFO]: Configuring cts characterization...
+[INFO]: Performing clock tree synthesis...
+[INFO]: Looking for the following net(s): clk
+[INFO]: Running Clock Tree Synthesis...
+[INFO CTS-0049] Characterization buffer is: sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0038] Number of created patterns = 50000.
+[INFO CTS-0038] Number of created patterns = 100000.
+[INFO CTS-0039] Number of created patterns = 141984.
+[INFO CTS-0084] Compiling LUT.
+Min. len    Max. len    Min. cap    Max. cap    Min. slew   Max. slew
+2           8           1           34          1           12          
+[WARNING CTS-0043] 4896 wires are pure wire and no slew degradation.
+TritonCTS forced slew degradation on these wires.
+[INFO CTS-0046]     Number of wire segments: 57096.
+[INFO CTS-0047]     Number of keys in characterization LUT: 1492.
+[INFO CTS-0048]     Actual min input cap: 1.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 5149 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 2 buffer(s) types.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 5149.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 25 and with maximum cluster diameter of 50.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13000  dbu (13 um).
+[INFO CTS-0019]  Total number of sinks after clustering: 506.
+[INFO CTS-0024]  Normalized sink region: [(0.976615, 1.42462), (64.1262, 65.5985)].
+[INFO CTS-0025]     Width:  63.1496.
+[INFO CTS-0026]     Height: 64.1738.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 253
+    Sub-region size: 63.1496 X 32.0869
+[INFO CTS-0034]     Segment length (rounded): 16.
+    Key: 4128 inSlew: 1 inCap: 1 outSlew: 2 load: 1 length: 8 delay: 1
+    Key: 4128 inSlew: 1 inCap: 1 outSlew: 2 load: 1 length: 8 delay: 1
+ Out of 506 sinks, 3 sinks closer to other cluster.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 127
+    Sub-region size: 31.5748 X 32.0869
+[INFO CTS-0034]     Segment length (rounded): 16.
+    Key: 4143 inSlew: 2 inCap: 1 outSlew: 3 load: 1 length: 8 delay: 1
+    Key: 1250 inSlew: 3 inCap: 1 outSlew: 1 load: 1 length: 8 delay: 19
+      location: 0.75 buffer: sky130_fd_sc_hd__clkbuf_8
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 64
+    Sub-region size: 31.5748 X 16.0435
+[INFO CTS-0034]     Segment length (rounded): 8.
+    Key: 4128 inSlew: 1 inCap: 1 outSlew: 2 load: 1 length: 8 delay: 1
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 32
+    Sub-region size: 15.7874 X 16.0435
+[INFO CTS-0034]     Segment length (rounded): 8.
+    Key: 4128 inSlew: 1 inCap: 1 outSlew: 2 load: 1 length: 8 delay: 1
+ Level 5
+    Direction: Vertical
+    Sinks per sub-region: 16
+    Sub-region size: 15.7874 X 8.0217
+[INFO CTS-0034]     Segment length (rounded): 4.
+    Key: 255 inSlew: 2 inCap: 1 outSlew: 3 load: 1 length: 4 delay: 1
+ Level 6
+    Direction: Horizontal
+    Sinks per sub-region: 8
+    Sub-region size: 7.8937 X 8.0217
+[INFO CTS-0034]     Segment length (rounded): 4.
+    Key: 74 inSlew: 3 inCap: 1 outSlew: 1 load: 1 length: 4 delay: 19
+      location: 0.5 buffer: sky130_fd_sc_hd__clkbuf_8
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 506.
+[INFO CTS-0018]     Created 559 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 4.
+[INFO CTS-0015]     Created 559 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:14, 3:19, 4:19, 5:20, 6:38, 7:39, 8:46, 9:56, 10:57, 11:45, 12:39, 13:43, 14:38, 15:25, 16:23, 17:8, 18:7, 19:3, 20:7, 21:1, 22:4, 23:2, 24:1..
+[INFO CTS-0017]     Max level of the clock tree: 6.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 5149
+[INFO CTS-0100]  Leaf buffers 490
+[INFO CTS-0101]  Average sink wire length 1460.43 um
+[INFO CTS-0102]  Path depth 3 - 4
+[INFO]: Repairing long wires on clock nets...
+[INFO RSZ-0058] Using max wire length 3048um.
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/cts/peripheral_unit.odb'…
+Writing layout to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/cts/peripheral_unit.def'…
+Writing timing constraints to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/cts/peripheral_unit.sdc'…
+[INFO]: Legalizing...
+Placement Analysis
+---------------------------------
+total displacement       6490.0 u
+average displacement        0.1 u
+max displacement           10.6 u
+original HPWL          981291.0 u
+legalized HPWL        1018215.7 u
+delta HPWL                    4 %
+
+[INFO DPL-0020] Mirrored 16485 instances
+[INFO DPL-0021] HPWL before          1018215.7 u
+[INFO DPL-0022] HPWL after           984210.8 u
+[INFO DPL-0023] HPWL delta               -3.3 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/cts/peripheral_unit.odb'…
+Writing layout to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/cts/peripheral_unit.def'…
+Writing timing constraints to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/cts/peripheral_unit.sdc'…
+cts_report
+[INFO CTS-0003] Total number of Clock Roots: 1.
+[INFO CTS-0004] Total number of Buffers Inserted: 559.
+[INFO CTS-0005] Total number of Clock Subnets: 559.
+[INFO CTS-0006] Total number of Sinks: 5149.
+cts_report_end

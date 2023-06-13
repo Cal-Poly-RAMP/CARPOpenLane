@@ -1,0 +1,87 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/tmp/15-peripheral_unit.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/tmp/synthesis/resizer_sky130_fd_sc_hd__tt_025C_1v80.lib
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 560 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 31
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 88052
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal     310000        150906          51.32%
+met2       Vertical       232500        154834          33.40%
+met3       Horizontal     155000        109035          29.65%
+met4       Vertical        93000         59788          35.71%
+met5       Horizontal      31000         15621          49.61%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 158297
+[INFO GRT-0198] Via related Steiner nodes: 4727
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 180310
+[INFO GRT-0112] Final usage 3D: 701098
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1            150906         70528           46.74%             0 /  0 /  0
+met2            154834         72711           46.96%             0 /  0 /  0
+met3            109035         10213            9.37%             0 /  0 /  0
+met4             59788          6716           11.23%             0 /  0 /  0
+met5             15621             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           490184        160168           32.68%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1720942 um
+[INFO GRT-0014] Routed nets: 36372
+[INFO]: Setting RC values...
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL          985953.1 u
+legalized HPWL        1020378.8 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 16532 instances
+[INFO DPL-0021] HPWL before          1020378.8 u
+[INFO DPL-0022] HPWL after           985953.1 u
+[INFO DPL-0023] HPWL delta               -3.4 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/tmp/17-peripheral_unit.odb'…
+Writing netlist to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/tmp/17-peripheral_unit.nl.v'…
+Writing powered netlist to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/tmp/17-peripheral_unit.pnl.v'…
+Writing layout to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/tmp/17-peripheral_unit.def'…
+Writing timing constraints to '/openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/tmp/17-peripheral_unit.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 365649 u^2 51% utilization.
+area_report_end

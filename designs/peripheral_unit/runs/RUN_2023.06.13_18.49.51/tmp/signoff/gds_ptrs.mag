@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 171691 173835
+string GDS_END 90311350
+string GDS_FILE /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/signoff/peripheral_unit.magic.gds
+string GDS_START 1407410
+<< end >>
