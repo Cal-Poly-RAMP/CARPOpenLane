@@ -1,0 +1,30 @@
+[INFO]: Run Directory: /openlane/designs/CARPSoC/runs/RUN_2023.06.06_00.34.52
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[INFO]: Preparing LEF files for the min corner...
+[INFO]: Preparing LEF files for the max corner...
+[INFO]: Running Verilator (log: designs/CARPSoC/runs/RUN_2023.06.06_00.34.52/logs/synthesis/verilator.log)...
+[INFO]: 0 errors found by Verilator
+[WARNING]: 62 warnings found by Verilator
+[INFO]: Running Synthesis (log: designs/CARPSoC/runs/RUN_2023.06.06_00.34.52/logs/synthesis/1-synthesis.log)...
+[ERROR]: Synthesis failed. Signal not matching port size. Search for 'Resizing cell port' in /openlane/designs/CARPSoC/runs/RUN_2023.06.06_00.34.52/logs/synthesis/1-synthesis.log
+[ERROR]: Step 1 (synthesis) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "check_resizing_cell_port" line 7)
+    invoked from within
+"check_resizing_cell_port $log"
+    (procedure "run_synthesis_checkers" line 4)
+    invoked from within
+"run_synthesis_checkers $log $pre_synth_report"
+    (procedure "run_synthesis" line 19)
+    invoked from within
+"run_synthesis"} -errorline 1
+[INFO]: Saving current set of views in 'designs/CARPSoC/runs/RUN_2023.06.06_00.34.52/results/final'...
+[INFO]: Generating final set of reports...
+[INFO]: Created manufacturability report at 'designs/CARPSoC/runs/RUN_2023.06.06_00.34.52/reports/manufacturability.rpt'.
+[INFO]: Created metrics report at 'designs/CARPSoC/runs/RUN_2023.06.06_00.34.52/reports/metrics.csv'.
+[INFO]: Saving runtime environment...
+[ERROR]: Flow failed.
+[INFO]: The failure may have been because of the following warnings:

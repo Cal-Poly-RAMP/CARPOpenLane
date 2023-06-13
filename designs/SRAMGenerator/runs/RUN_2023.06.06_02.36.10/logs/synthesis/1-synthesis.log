@@ -1,0 +1,928 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.27+30 (git sha1 101075611fc, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Liberty frontend: ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib
+Imported 1 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v
+Parsing SystemVerilog input from `./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v' to AST representation.
+Replacing existing blackbox module `\sky130_sram_2kbyte_1rw1r_32x512_8' at ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:6.1-114.10.
+Generating RTLIL representation for module `\sky130_sram_2kbyte_1rw1r_32x512_8'.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ./designs/SRAMGenerator/src/sramgen.sv
+Parsing SystemVerilog input from `./designs/SRAMGenerator/src/sramgen.sv' to AST representation.
+Generating RTLIL representation for module `\sram_wrap'.
+Warning: Replacing memory \sram_i_read_vec with list of registers. See ./designs/SRAMGenerator/src/sramgen.sv:0
+Warning: Replacing memory \sram_d_read_vec with list of registers. See ./designs/SRAMGenerator/src/sramgen.sv:0
+Successfully finished Verilog frontend.
+
+4. Generating Graphviz representation of design.
+Writing dot description to `/openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/hierarchy.dot'.
+Dumping module sram_wrap to page 1.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1. Analyzing design hierarchy..
+Top module:  \sram_wrap
+
+5.2. Analyzing design hierarchy..
+Top module:  \sram_wrap
+Removed 0 unused modules.
+
+6. Executing TRIBUF pass.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \sram_wrap
+
+7.2. Analyzing design hierarchy..
+Top module:  \sram_wrap
+Removed 0 unused modules.
+
+8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+10. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 11 assignments to connections.
+
+11. Executing PROC_INIT pass (extract init attributes).
+
+12. Executing PROC_ARST pass (detect async resets in processes).
+
+13. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+14. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:106$34'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$33'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:132$26'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$24'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:52$22'.
+     1/2: $0\sram_i_rvalid_o[0:0]
+     2/2: $0\sram_d_rvalid_o[0:0]
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sram_wrap.\cs_data' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:106$34'.
+No latch inferred for signal `\sram_wrap.\sram_d_read_vec[0]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$33'.
+No latch inferred for signal `\sram_wrap.\sram_d_read_vec[1]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$33'.
+No latch inferred for signal `\sram_wrap.\sram_i_read_vec[0]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$33'.
+No latch inferred for signal `\sram_wrap.\sram_i_read_vec[1]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$33'.
+No latch inferred for signal `\sram_wrap.$fordecl_block$5.i' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$24'.
+No latch inferred for signal `\sram_wrap.\sram_d_gnt_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+No latch inferred for signal `\sram_wrap.\sram_i_gnt_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+No latch inferred for signal `\sram_wrap.\illegal_memory_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+
+16. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\sram_wrap.\cs_data_prev' using process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:132$26'.
+  created $dff cell `$procdff$39' with positive edge clock.
+Creating register for signal `\sram_wrap.\cs_inst_prev' using process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:132$26'.
+  created $dff cell `$procdff$40' with positive edge clock.
+Creating register for signal `\sram_wrap.\sram_d_rvalid_o' using process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:52$22'.
+  created $dff cell `$procdff$41' with positive edge clock.
+Creating register for signal `\sram_wrap.\sram_i_rvalid_o' using process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:52$22'.
+  created $dff cell `$procdff$42' with positive edge clock.
+
+17. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+18. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:106$34'.
+Removing empty process `sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$33'.
+Removing empty process `sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:132$26'.
+Removing empty process `sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$24'.
+Found and cleaned up 1 empty switch in `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:52$22'.
+Removing empty process `sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:52$22'.
+Removing empty process `sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+Cleaned up 1 empty switch.
+
+19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+<suppressed ~4 debug messages>
+
+20. Executing FLATTEN pass (flatten design).
+
+21. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+22. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+Removed 9 unused cells and 44 unused wires.
+<suppressed ~17 debug messages>
+
+23. Executing CHECK pass (checking for obvious problems).
+Checking module sram_wrap...
+Warning: Wire sram_wrap.\sram_i_rdata_o [31] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [30] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [29] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [28] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [27] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [26] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [25] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [24] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [23] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [22] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [21] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [20] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [19] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [18] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [17] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [16] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [15] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [14] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [13] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [12] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [11] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [10] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [9] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [8] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [7] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [6] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [5] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [4] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [3] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [2] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [1] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [0] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [31] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [30] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [29] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [28] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [27] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [26] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [25] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [24] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [23] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [22] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [21] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [20] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [19] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [18] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [17] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [16] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [15] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [14] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [13] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [12] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [11] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [10] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [9] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [8] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [7] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [6] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [5] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [4] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [3] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [2] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [1] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [0] is used but has no driver.
+Found and reported 64 problems.
+
+24. Executing OPT pass (performing simple optimizations).
+
+24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+24.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sram_wrap..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+24.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sram_wrap.
+Performed a total of 0 changes.
+
+24.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+24.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+24.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+24.9. Finished OPT passes. (There is nothing left to do.)
+
+25. Executing FSM pass (extract and optimize FSM).
+
+25.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+25.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+25.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+25.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+25.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+25.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+25.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+25.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+26. Executing OPT pass (performing simple optimizations).
+
+26.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+26.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+26.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sram_wrap..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+26.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sram_wrap.
+Performed a total of 0 changes.
+
+26.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+26.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$42 ($dff) from module sram_wrap (D = \sram_i_req_i, Q = \sram_i_rvalid_o).
+Adding EN signal on $procdff$41 ($dff) from module sram_wrap (D = \sram_d_req_i, Q = \sram_d_rvalid_o).
+
+26.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+Removed 2 unused cells and 2 unused wires.
+<suppressed ~3 debug messages>
+
+26.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+26.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+26.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sram_wrap..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+26.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sram_wrap.
+Performed a total of 0 changes.
+
+26.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+26.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+26.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+26.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+26.16. Finished OPT passes. (There is nothing left to do.)
+
+27. Executing WREDUCE pass (reducing word size of cells).
+
+28. Executing PEEPOPT pass (run peephole optimizers).
+
+29. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+30. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module sram_wrap:
+  created 0 $alu and 0 $macc cells.
+
+31. Executing SHARE pass (SAT-based resource sharing).
+
+32. Executing OPT pass (performing simple optimizations).
+
+32.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+32.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+32.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sram_wrap..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+32.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sram_wrap.
+Performed a total of 0 changes.
+
+32.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+32.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+32.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+32.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+32.9. Finished OPT passes. (There is nothing left to do.)
+
+33. Executing MEMORY pass.
+
+33.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+33.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+33.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+33.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+33.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+33.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+33.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+33.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+33.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+33.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+34. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+35. Executing OPT pass (performing simple optimizations).
+
+35.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+<suppressed ~7 debug messages>
+
+35.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+35.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+35.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+35.5. Finished fast OPT passes.
+
+36. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+37. Executing OPT pass (performing simple optimizations).
+
+37.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+37.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+37.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sram_wrap..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+37.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sram_wrap.
+Performed a total of 0 changes.
+
+37.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+37.6. Executing OPT_SHARE pass.
+
+37.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+37.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+37.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+37.10. Finished OPT passes. (There is nothing left to do.)
+
+38. Executing TECHMAP pass (map to technology primitives).
+
+38.1. Executing Verilog-2005 frontend: /build/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/build/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+38.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $dffe.
+No more expansions possible.
+<suppressed ~75 debug messages>
+
+39. Executing OPT pass (performing simple optimizations).
+
+39.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+39.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+39.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+39.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+39.5. Finished fast OPT passes.
+
+40. Executing ABC pass (technology mapping using ABC).
+
+40.1. Extracting gate netlist of module `\sram_wrap' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+41. Executing OPT pass (performing simple optimizations).
+
+41.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+41.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+41.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+41.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+41.5. Finished fast OPT passes.
+
+42. Executing HIERARCHY pass (managing design hierarchy).
+
+42.1. Analyzing design hierarchy..
+Top module:  \sram_wrap
+
+42.2. Analyzing design hierarchy..
+Top module:  \sram_wrap
+Removed 0 unused modules.
+
+43. Printing statistics.
+
+=== sram_wrap ===
+
+   Number of wires:                 22
+   Number of wire bits:            215
+   Number of public wires:          22
+   Number of public wire bits:     215
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $_DFFE_PN_                      2
+
+44. Executing CHECK pass (checking for obvious problems).
+Checking module sram_wrap...
+Found and reported 0 problems.
+
+45. Generating Graphviz representation of design.
+Writing dot description to `/openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/post_techmap.dot'.
+Dumping module sram_wrap to page 1.
+
+46. Executing SHARE pass (SAT-based resource sharing).
+
+47. Executing OPT pass (performing simple optimizations).
+
+47.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+47.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+47.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sram_wrap..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+47.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sram_wrap.
+Performed a total of 0 changes.
+
+47.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_wrap'.
+Removed a total of 0 cells.
+
+47.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+47.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+
+47.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_wrap.
+
+47.9. Finished OPT passes. (There is nothing left to do.)
+
+48. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~3 debug messages>
+
+49. Printing statistics.
+
+=== sram_wrap ===
+
+   Number of wires:                 19
+   Number of wire bits:            211
+   Number of public wires:          19
+   Number of public wire bits:     211
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $_DFFE_PN_                      2
+
+mapping tbuf
+
+50. Executing TECHMAP pass (map to technology primitives).
+
+50.1. Executing Verilog-2005 frontend: /root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+50.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+51. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+52. Executing TECHMAP pass (map to technology primitives).
+
+52.1. Executing Verilog-2005 frontend: /root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+52.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+53. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+54. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+54.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\sram_wrap':
+  mapped 2 $_DFF_P_ cells to \sky130_fd_sc_hd__dfxtp_2 cells.
+
+55. Printing statistics.
+
+=== sram_wrap ===
+
+   Number of wires:                 21
+   Number of wire bits:            213
+   Number of public wires:          19
+   Number of public wire bits:     211
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $_MUX_                          2
+     sky130_fd_sc_hd__dfxtp_2        2
+
+[INFO]: USING STRATEGY AREA 0
+
+56. Executing ABC pass (technology mapping using ABC).
+
+56.1. Extracting gate netlist of module `\sram_wrap' to `/tmp/yosys-abc-ODtsrI/input.blif'..
+Extracted 2 gates and 7 wires to a netlist network with 5 inputs and 2 outputs.
+
+56.1.1. Executing ABC.
+Running ABC command: "/build/bin/yosys-abc" -s -f /tmp/yosys-abc-ODtsrI/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-ODtsrI/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-ODtsrI/input.blif 
+ABC: + read_lib -w /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.07 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130A_merged" from "/openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.12 sec
+ABC: Memory =    9.54 MB. Time =     0.12 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/synthesis.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
+ABC: Setting output load to be 40.000000.
+ABC: + read_constr /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/synthesis.sdc 
+ABC: + fx 
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 12000 -M 5 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + retime -D -D 12000 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &dch 
+ABC: + &nf 
+ABC: + &put 
+ABC: + buffer -N 50 -S 750.0 
+ABC: + upsize -D 12000 
+ABC: Current delay (473.33 ps) does not exceed the target delay (12000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 12000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =      4 ( 50.0 %)   Cap = 10.9 ff ( 12.5 %)   Area =       30.03 ( 50.0 %)   Delay =   601.32 ps  (100.0 %)               
+ABC: Path  0 --       3 : 0    2 pi                      A =   0.00  Df =  23.3  -13.4 ps  S =  38.0 ps  Cin =  0.0 ff  Cout =   6.7 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --       8 : 3    1 sky130_fd_sc_hd__mux2_2 A =  11.26  Df = 313.8  -84.2 ps  S =  45.7 ps  Cin =  2.3 ff  Cout =   2.2 ff  Cmax = 297.6 ff  G =   92  
+ABC: Path  2 --       9 : 1    1 sky130_fd_sc_hd__buf_1  A =   3.75  Df = 601.3  -41.2 ps  S = 471.4 ps  Cin =  2.1 ff  Cout =  40.0 ff  Cmax = 130.0 ff  G = 1902  
+ABC: Start-point = pi2 (\rst_ni).  End-point = po0 ($auto$rtlil.cc:2607:MuxGate$127).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =    5/    2  lat =    0  nd =     4  edge =      8  area =30.02  delay = 2.00  lev = 2
+ABC: + write_blif /tmp/yosys-abc-ODtsrI/output.blif 
+
+56.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__mux2_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__buf_1 cells:        2
+ABC RESULTS:        internal signals:        0
+ABC RESULTS:           input signals:        5
+ABC RESULTS:          output signals:        2
+Removing temp directory.
+
+57. Executing SETUNDEF pass (replace undef values with defined constants).
+
+58. Executing HILOMAP pass (mapping to constant drivers).
+
+59. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+60. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_wrap..
+Removed 0 unused cells and 74 unused wires.
+<suppressed ~1 debug messages>
+
+61. Executing INSBUF pass (insert buffer cells for connected wires).
+
+62. Executing CHECK pass (checking for obvious problems).
+Checking module sram_wrap...
+Warning: Wire sram_wrap.\sram_i_rvalid_o is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [31] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [30] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [29] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [28] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [27] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [26] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [25] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [24] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [23] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [22] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [21] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [20] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [19] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [18] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [17] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [16] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [15] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [14] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [13] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [12] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [11] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [10] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [9] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [8] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [7] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [6] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [5] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [4] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [3] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [2] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [1] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_rdata_o [0] is used but has no driver.
+Warning: Wire sram_wrap.\sram_i_gnt_o is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rvalid_o is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [31] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [30] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [29] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [28] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [27] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [26] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [25] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [24] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [23] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [22] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [21] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [20] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [19] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [18] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [17] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [16] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [15] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [14] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [13] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [12] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [11] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [10] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [9] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [8] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [7] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [6] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [5] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [4] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [3] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [2] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [1] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_rdata_o [0] is used but has no driver.
+Warning: Wire sram_wrap.\sram_d_gnt_o is used but has no driver.
+Warning: Wire sram_wrap.\illegal_memory_o is used but has no driver.
+Found and reported 69 problems.
+
+63. Printing statistics.
+
+=== sram_wrap ===
+
+   Number of wires:                 23
+   Number of wire bits:            215
+   Number of public wires:          19
+   Number of public wire bits:     211
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 73
+     sky130_fd_sc_hd__buf_1          2
+     sky130_fd_sc_hd__conb_1        67
+     sky130_fd_sc_hd__dfxtp_2        2
+     sky130_fd_sc_hd__mux2_2         2
+
+   Chip area for module '\sram_wrap': 324.060800
+
+64. Executing Verilog backend.
+Dumping module `\sram_wrap'.
+
+Warnings: 72 unique messages, 139 total
+End of script. Logfile hash: a2f5e8db5e, CPU: user 0.40s system 0.04s, MEM: 28.57 MB peak
+Yosys 0.27+30 (git sha1 101075611fc, gcc 8.3.1 -fPIC -Os)
+Time spent: 37% 2x abc (0 sec), 25% 4x stat (0 sec), ...

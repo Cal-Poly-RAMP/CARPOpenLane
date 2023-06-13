@@ -1,0 +1,32 @@
+[ERROR]: during executing yosys script /openlane/scripts/yosys/synth.tcl
+[ERROR]: Log: designs/SRAMGenerator/runs/RUN_2023.06.06_02.27.45/logs/synthesis/1-synthesis.log
+[ERROR]: Last 10 lines:
+No latch inferred for signal `\sram_wrap.\sram_i_read_vec[0]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$32'.
+No latch inferred for signal `\sram_wrap.\sram_i_read_vec[1]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$32'.
+No latch inferred for signal `\sram_wrap.$fordecl_block$5.i' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$23'.
+No latch inferred for signal `\sram_wrap.\sram_d_gnt_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+No latch inferred for signal `\sram_wrap.\sram_i_gnt_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+No latch inferred for signal `\sram_wrap.\illegal_memory_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+
+16. Executing PROC_DFF pass (convert process syncs to FFs).
+ERROR: Multiple edge sensitive events found for this signal!
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: Step 1 (synthesis) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "run_tcl_script" line 219)
+    invoked from within
+"run_tcl_script -tool yosys -no_consume {*}$args"
+    (procedure "run_yosys_script" line 2)
+    invoked from within
+"run_yosys_script $::env(SYNTH_SCRIPT) -indexed_log $arg_values(-indexed_log)"
+    (procedure "run_yosys" line 44)
+    invoked from within
+"run_yosys -indexed_log $log"
+    (procedure "run_synthesis" line 13)
+    invoked from within
+"run_synthesis"} -errorline 1
+[ERROR]: Flow failed.

@@ -1,0 +1,44 @@
+
+106. Printing statistics.
+
+=== user_project_wrapper ===
+
+   Number of wires:             204889
+   Number of wire bits:         219017
+   Number of public wires:        1349
+   Number of public wire bits:   11517
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:             217094
+     $_ANDNOT_                   83628
+     $_AND_                       3155
+     $_DFFE_NP_                   1024
+     $_DFFE_PN_                     13
+     $_DFFE_PP_                   1339
+     $_DFF_N_                        8
+     $_DFF_P_                      341
+     $_MUX_                      85591
+     $_NAND_                      1210
+     $_NOR_                       8139
+     $_NOT_                       7103
+     $_ORNOT_                     1911
+     $_OR_                       11285
+     $_SDFFCE_PN0N_                 31
+     $_SDFFCE_PN0P_                 89
+     $_SDFFCE_PN1P_                  4
+     $_SDFFCE_PP0P_                 62
+     $_SDFFE_PN0N_                 426
+     $_SDFFE_PN0P_                3011
+     $_SDFFE_PN1P_                 314
+     $_SDFFE_PP0N_                  80
+     $_SDFFE_PP0P_                 591
+     $_SDFFE_PP1N_                   4
+     $_SDFFE_PP1P_                   8
+     $_SDFF_PN0_                  2186
+     $_SDFF_PN1_                    35
+     $_SDFF_PP0_                    46
+     $_TBUF_                         4
+     $_XNOR_                       760
+     $_XOR_                       4696
+

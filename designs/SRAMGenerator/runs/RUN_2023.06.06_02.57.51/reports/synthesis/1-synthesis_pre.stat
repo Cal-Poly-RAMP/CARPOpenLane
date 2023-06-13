@@ -1,0 +1,15 @@
+
+49. Printing statistics.
+
+=== sram_wrap ===
+
+   Number of wires:                 19
+   Number of wire bits:            211
+   Number of public wires:          19
+   Number of public wire bits:     211
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $_DFFE_PN_                      2
+

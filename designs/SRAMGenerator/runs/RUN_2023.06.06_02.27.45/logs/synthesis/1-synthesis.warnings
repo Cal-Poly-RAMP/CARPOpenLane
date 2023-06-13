@@ -1,0 +1,6 @@
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+Warning: Replacing memory \sram_i_read_vec with list of registers. See ./designs/SRAMGenerator/src/sramgen.sv:0
+Warning: Replacing memory \sram_d_read_vec with list of registers. See ./designs/SRAMGenerator/src/sramgen.sv:0

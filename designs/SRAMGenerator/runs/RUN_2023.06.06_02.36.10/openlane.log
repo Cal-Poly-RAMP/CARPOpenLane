@@ -1,0 +1,220 @@
+[INFO]: Run Directory: /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[INFO]: Preparing LEF files for the min corner...
+[INFO]: Preparing LEF files for the max corner...
+[INFO]: Running Verilator (log: designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/logs/synthesis/verilator.log)...
+[INFO]: 0 errors found by Verilator
+[WARNING]: 22 warnings found by Verilator
+[INFO]: Running Synthesis (log: designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/logs/synthesis/1-synthesis.log)...
+[ERROR]: Yosys checks have failed: Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [31] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [30] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [29] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [28] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [27] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [26] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [25] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [24] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [23] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [22] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [21] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [20] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [19] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [18] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [17] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [16] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [15] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [14] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [13] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [12] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [11] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [10] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [9] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [8] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [7] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [6] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [5] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [4] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [3] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [2] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [1] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_i_rdata_o [0] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [31] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [30] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [29] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [28] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [27] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [26] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [25] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [24] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [23] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [22] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [21] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [20] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [19] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [18] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [17] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [16] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [15] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [14] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [13] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [12] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [11] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [10] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [9] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [8] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [7] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [6] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [5] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [4] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [3] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [2] is used but has no driver.
+
+Encountered check error:
+Warning: Wire sram_wrap.\sram_d_rdata_o [1] is used but has no driver.
+
+child process exited abnormally
+[ERROR]: See the full report here: designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/reports/synthesis/1-synthesis_pre_synth.chk.rpt
+[ERROR]: Step 1 (synthesis) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "check_synth_misc" line 13)
+    invoked from within
+"check_synth_misc $report"
+    (procedure "run_synthesis_checkers" line 5)
+    invoked from within
+"run_synthesis_checkers $log $pre_synth_report"
+    (procedure "run_synthesis" line 19)
+    invoked from within
+"run_synthesis"} -errorline 1
+[INFO]: Saving current set of views in 'designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/results/final'...
+[INFO]: Generating final set of reports...
+[INFO]: Created manufacturability report at 'designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/reports/manufacturability.rpt'.
+[INFO]: Created metrics report at 'designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/reports/metrics.csv'.
+[INFO]: Saving runtime environment...
+[ERROR]: Flow failed.
+[INFO]: The failure may have been because of the following warnings:

@@ -1,0 +1,94 @@
+%Warning-MULTIDRIVEN: designs/SRAMGenerator/src/sramgen.sv:119:55: Variable written to in always_comb also written by other process (IEEE 1800-2017 9.2.2.2): 'cs_data'
+                                                                 : ... In instance sram_wrap
+                      designs/SRAMGenerator/src/sramgen.sv:119:55: 
+  119 |             if ( sram_d_req_i && i == sram_d_cs_addr) cs_data[i] = 1;
+      |                                                       ^~~~~~~
+                      designs/SRAMGenerator/src/sramgen.sv:106:43: ... Location of other write
+  106 |     logic [SRAM_NUM_BLOCKS-1:0] cs_data = 0, cs_inst, cs_data_prev, cs_inst_prev ;
+      |                                           ^
+                      ... For warning description see https://verilator.org/warn/MULTIDRIVEN?v=5.009
+                      ... Use "/* verilator lint_off MULTIDRIVEN */" and lint_on around source to disable this message.
+%Warning-UNUSEDPARAM: designs/SRAMGenerator/src/sramgen.sv:2:15: Parameter is not used: 'SRAM_BASE_ADDR'
+                                                               : ... In instance sram_wrap
+    2 |     parameter SRAM_BASE_ADDR    = 32'h8000_0000,
+      |               ^~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: designs/SRAMGenerator/src/sramgen.sv:3:15: Parameter is not used: 'SRAM_END_ADDR'
+                                                               : ... In instance sram_wrap
+    3 |     parameter SRAM_END_ADDR     = 32'h8000_C000,
+      |               ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: designs/SRAMGenerator/src/sramgen.sv:14:25: Bits of signal are not used: 'sram_d_addr_i'[31:12,1:0]
+                                                                 : ... In instance sram_wrap
+   14 |     input  logic [31:0] sram_d_addr_i,
+      |                         ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: designs/SRAMGenerator/src/sramgen.sv:24:25: Bits of signal are not used: 'sram_i_addr_i'[31:12,1:0]
+                                                                 : ... In instance sram_wrap
+   24 |     input  logic [31:0] sram_i_addr_i,
+      |                         ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: designs/SRAMGenerator/src/sramgen.sv:25:25: Signal is not used: 'sram_i_we_i'
+                                                                 : ... In instance sram_wrap
+   25 |     input  logic        sram_i_we_i,
+      |                         ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: designs/SRAMGenerator/src/sramgen.sv:26:25: Signal is not used: 'sram_i_be_i'
+                                                                 : ... In instance sram_wrap
+   26 |     input  logic [3:0]  sram_i_be_i,
+      |                         ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: designs/SRAMGenerator/src/sramgen.sv:27:25: Signal is not used: 'sram_i_wdata_i'
+                                                                 : ... In instance sram_wrap
+   27 |     input  logic [31:0] sram_i_wdata_i,
+      |                         ^~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:22:13: Parameter is not used: 'DELAY'
+                                                                                            : ... In instance sram_wrap.genblk1[1].sram1
+   22 |   parameter DELAY = 3 ;
+      |             ^~~~~
+%Warning-UNUSEDPARAM: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:24:13: Parameter is not used: 'T_HOLD'
+                                                                                            : ... In instance sram_wrap.genblk1[1].sram1
+   24 |   parameter T_HOLD = 1 ;  
+      |             ^~~~~~
+%Warning-UNSIGNED: designs/SRAMGenerator/src/sramgen.sv:115:53: Comparison is constant due to unsigned arithmetic
+                                                              : ... In instance sram_wrap
+  115 |         for (logic[SRAM_LOG_BLOCKS - 1 :0] i = 0; i < SRAM_NUM_BLOCKS[SRAM_LOG_BLOCKS - 1 :0]; i++ )
+      |                                                     ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:52:14: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   52 |     csb0_reg = csb0;
+      |              ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:53:14: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   53 |     web0_reg = web0;
+      |              ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:54:16: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   54 |     wmask0_reg = wmask0;
+      |                ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:55:15: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   55 |     addr0_reg = addr0;
+      |               ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:56:14: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   56 |     din0_reg = din0;
+      |              ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:71:14: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   71 |     csb1_reg = csb1;
+      |              ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:72:15: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   72 |     addr1_reg = addr1;
+      |               ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:88:37: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   88 |                 mem[addr0_reg][7:0] = din0_reg[7:0];
+      |                                     ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:90:38: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   90 |                 mem[addr0_reg][15:8] = din0_reg[15:8];
+      |                                      ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:92:39: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   92 |                 mem[addr0_reg][23:16] = din0_reg[23:16];
+      |                                       ^
+%Warning-BLKSEQ: designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:94:39: Blocking assignment '=' in sequential logic process
+                                                                                       : ... Suggest using delayed assignment '<='
+   94 |                 mem[addr0_reg][31:24] = din0_reg[31:24];
+      |                                       ^

@@ -1,0 +1,15 @@
+[ERROR]: Synthesis failed. Signal not matching port size. Search for 'Resizing cell port' in /openlane/designs/CARPSoC/runs/RUN_2023.06.06_00.34.52/logs/synthesis/1-synthesis.log
+[ERROR]: Step 1 (synthesis) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "check_resizing_cell_port" line 7)
+    invoked from within
+"check_resizing_cell_port $log"
+    (procedure "run_synthesis_checkers" line 4)
+    invoked from within
+"run_synthesis_checkers $log $pre_synth_report"
+    (procedure "run_synthesis" line 19)
+    invoked from within
+"run_synthesis"} -errorline 1
+[ERROR]: Flow failed.

@@ -1,0 +1,36 @@
+Tue Jun 06 02:36:10 UTC 2023 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/layers.list /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Tue Jun 06 02:36:11 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.nom.lef -i /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Tue Jun 06 02:36:11 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.nom.lef -i /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.nom.lef ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.lef |& tee /dev/null"
+
+Tue Jun 06 02:36:11 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.min.lef -i /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Tue Jun 06 02:36:11 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.min.lef -i /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.min.lef ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.lef |& tee /dev/null"
+
+Tue Jun 06 02:36:11 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.max.lef -i /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Tue Jun 06 02:36:11 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.max.lef -i /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/merged.max.lef ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.lef |& tee /dev/null"
+
+Tue Jun 06 02:36:11 UTC 2023 - Executing "python3 /openlane/scripts/mergeLib.py --output /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/merged.lib --name sky130A_merged /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Tue Jun 06 02:36:12 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/trimmed.lib /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/merged.lib"
+
+Tue Jun 06 02:36:12 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/cts/cts.lib.exclude.list --output /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/cts/cts.lib /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Tue Jun 06 02:36:12 UTC 2023 - Executing "python3 /openlane/scripts/new_tracks.py -i /root/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/routing/config.tracks"
+
+Tue Jun 06 02:36:12 UTC 2023 - Executing "echo {OpenLane 01add399474b7e5a35a66d66d531cad77f049230} > /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/OPENLANE_VERSION"
+
+Tue Jun 06 02:36:13 UTC 2023 - Executing "bash -c {verilator  --lint-only  -Wall  --Wno-DECLFILENAME  --top-module sram_wrap  -I /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -I /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v ./designs/SRAMGenerator/src/sramgen.sv ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v -Wno-fatal --relative-includes |& tee /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/logs/synthesis/verilator.log /dev/null}"
+
+Tue Jun 06 02:36:13 UTC 2023 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Tue Jun 06 02:36:13 UTC 2023 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/trimmed.lib > /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/tmp/synthesis/1-trimmed.no_pg.lib"
+
+Tue Jun 06 02:36:14 UTC 2023 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/logs/synthesis/1-synthesis.log"
+
+Tue Jun 06 02:36:14 UTC 2023 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/SRAMGenerator\/runs\/RUN_2023.06.06_02.36.10\/results\/synthesis\/sram_wrap.v/} /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/config.tcl"
+
+Tue Jun 06 02:36:14 UTC 2023 - Executing "sed -i.bak /defparam/d /openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.36.10/results/synthesis/sram_wrap.v"
+

@@ -49,10 +49,12 @@ module sram_wrap #(
         illegal_memory_o = 0;
 
     end
-    always_ff @(posedge clk_i or negedge rst_ni) 
+    always_ff @(posedge clk_i) 
     begin
-        sram_i_rvalid_o <= sram_i_req_i;
-        sram_d_rvalid_o <= sram_d_req_i;
+	    if (~rst_ni) begin
+                sram_i_rvalid_o <= sram_i_req_i;
+                sram_d_rvalid_o <= sram_d_req_i;
+            end
     end
     //     sram_d_gnt_o <= rst_ni ? sram_d_gnt: 1'b0;
     //     sram_i_gnt_o <= rst_ni ? sram_i_gnt: 1'b0;
@@ -122,8 +124,8 @@ module sram_wrap #(
             // Output Muxing
             sram_d_rdata_o = 0;
             sram_i_rdata_o = 0;
-            if (cs_data_prev[i]) sram_d_rdata_o = sram_d_read_vec[i];
-            if (cs_inst_prev[i]) sram_i_rdata_o = sram_i_read_vec[i];
+            if (cs_data_prev[i]) sram_d_rdata_o[i] = sram_d_read_vec[i];
+            if (cs_inst_prev[i]) sram_i_rdata_o[i] = sram_i_read_vec[i];
         end 
     // Save Previous CS
     end

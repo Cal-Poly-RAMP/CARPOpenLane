@@ -1,0 +1,20 @@
+
+63. Printing statistics.
+
+=== sram_wrap ===
+
+   Number of wires:                 23
+   Number of wire bits:            215
+   Number of public wires:          19
+   Number of public wire bits:     211
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 73
+     sky130_fd_sc_hd__buf_1          2
+     sky130_fd_sc_hd__conb_1        67
+     sky130_fd_sc_hd__dfxtp_2        2
+     sky130_fd_sc_hd__mux2_2         2
+
+   Chip area for module '\sram_wrap': 324.060800
+

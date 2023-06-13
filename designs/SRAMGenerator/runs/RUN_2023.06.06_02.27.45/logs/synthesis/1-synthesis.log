@@ -1,0 +1,111 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.27+30 (git sha1 101075611fc, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Liberty frontend: ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib
+Imported 1 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v
+Parsing SystemVerilog input from `./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v' to AST representation.
+Replacing existing blackbox module `\sky130_sram_2kbyte_1rw1r_32x512_8' at ./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:6.1-114.10.
+Generating RTLIL representation for module `\sky130_sram_2kbyte_1rw1r_32x512_8'.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v:0: Warning: System task `$display' outside initial block is unsupported.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ./designs/SRAMGenerator/src/sramgen.sv
+Parsing SystemVerilog input from `./designs/SRAMGenerator/src/sramgen.sv' to AST representation.
+Generating RTLIL representation for module `\sram_wrap'.
+Warning: Replacing memory \sram_i_read_vec with list of registers. See ./designs/SRAMGenerator/src/sramgen.sv:0
+Warning: Replacing memory \sram_d_read_vec with list of registers. See ./designs/SRAMGenerator/src/sramgen.sv:0
+Successfully finished Verilog frontend.
+
+4. Generating Graphviz representation of design.
+Writing dot description to `/openlane/designs/SRAMGenerator/runs/RUN_2023.06.06_02.27.45/tmp/synthesis/hierarchy.dot'.
+Dumping module sram_wrap to page 1.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1. Analyzing design hierarchy..
+Top module:  \sram_wrap
+
+5.2. Analyzing design hierarchy..
+Top module:  \sram_wrap
+Removed 0 unused modules.
+
+6. Executing TRIBUF pass.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \sram_wrap
+
+7.2. Analyzing design hierarchy..
+Top module:  \sram_wrap
+Removed 0 unused modules.
+
+8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+10. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 13 assignments to connections.
+
+11. Executing PROC_INIT pass (extract init attributes).
+
+12. Executing PROC_ARST pass (detect async resets in processes).
+
+13. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+14. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:104$33'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$32'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:130$25'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$23'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:52$22'.
+Creating decoders for process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sram_wrap.\cs_data' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:104$33'.
+No latch inferred for signal `\sram_wrap.\sram_d_read_vec[0]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$32'.
+No latch inferred for signal `\sram_wrap.\sram_d_read_vec[1]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$32'.
+No latch inferred for signal `\sram_wrap.\sram_i_read_vec[0]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$32'.
+No latch inferred for signal `\sram_wrap.\sram_i_read_vec[1]' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$32'.
+No latch inferred for signal `\sram_wrap.$fordecl_block$5.i' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$23'.
+No latch inferred for signal `\sram_wrap.\sram_d_gnt_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+No latch inferred for signal `\sram_wrap.\sram_i_gnt_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+No latch inferred for signal `\sram_wrap.\illegal_memory_o' from process `\sram_wrap.$proc$./designs/SRAMGenerator/src/sramgen.sv:0$21'.
+
+16. Executing PROC_DFF pass (convert process syncs to FFs).
+ERROR: Multiple edge sensitive events found for this signal!

@@ -56,7 +56,7 @@
 	
 	"VDD_NETS": "vccd1",
   "GND_NETS": "vssd1",
-  "FP_PDN_MACRO_HOOKS": "sram1[0] vccd1 vssd1 vccd1 vssd1 sram1[1] vccd1 vssd1 vccd1 vssd1",
+  "FP_PDN_MACRO_HOOKS": "sram1[0] vccd1 vssd1 vccd1 vssd1, sram1[1] vccd1 vssd1 vccd1 vssd1",
   "VERILOG_FILES_BLACKBOX": "./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.v",
   "EXTRA_LEFS": "./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8.lef",
   "EXTRA_LIBS": "./designs/SRAMGenerator/macros/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib",
