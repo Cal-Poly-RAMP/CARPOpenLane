@@ -1,0 +1,24 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/placement/9-resizer.odb'…
+define_corners Typical
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL          993548.0 u
+legalized HPWL        1026898.5 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 17611 instances
+[INFO DPL-0021] HPWL before          1026898.5 u
+[INFO DPL-0022] HPWL after           993548.0 u
+[INFO DPL-0023] HPWL delta               -3.2 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/results/placement/peripheral_unit.odb'…
+Writing netlist to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/results/placement/peripheral_unit.nl.v'…
+Writing powered netlist to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/results/placement/peripheral_unit.pnl.v'…
+Writing layout to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/results/placement/peripheral_unit.def'…

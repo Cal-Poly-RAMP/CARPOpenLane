@@ -1,0 +1,42 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/merged.nom.lef at line 68353.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/results/routing/peripheral_unit.def
+[INFO ODB-0128] Design: peripheral_unit
+[INFO ODB-0130]     Created 288 pins.
+[INFO ODB-0131]     Created 97347 components and 499837 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 369044 connections.
+[INFO ODB-0133]     Created 39308 nets and 130780 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/results/routing/peripheral_unit.def
+[INFO]: Setting RC values...
+[INFO PSM-0002] Output voltage file is specified as: /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/reports/signoff/32-irdrop.rpt.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net VPWR is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[INFO PSM-0076] Setting metal node density to be standard cell height times 5.
+[WARNING PSM-0030] VSRC location at (79.180um, 83.840um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (21.840um, 84.320um).
+[WARNING PSM-0030] VSRC location at (359.180um, 223.840um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (381.840um, 225.760um).
+[WARNING PSM-0030] VSRC location at (639.180um, 363.840um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (561.840um, 361.760um).
+[WARNING PSM-0030] VSRC location at (79.180um, 503.840um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (21.840um, 503.200um).
+[WARNING PSM-0030] VSRC location at (359.180um, 643.840um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (381.840um, 644.640um).
+[WARNING PSM-0030] VSRC location at (639.180um, 783.840um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (561.840um, 786.080um).
+[INFO PSM-0031] Number of PDN nodes on net VPWR = 16078.
+[INFO PSM-0064] Number of voltage sources = 6.
+[INFO PSM-0040] All PDN stripes on net VPWR are connected.
+########## IR report #################
+Worstcase voltage: 1.80e+00 V
+Average IR drop  : 4.15e-08 V
+Worstcase IR drop: 8.09e-08 V
+######################################

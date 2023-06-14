@@ -1,0 +1,35 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/results/cts/peripheral_unit.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/synthesis/resizer_sky130_fd_sc_hd__tt_025C_1v80.lib
+[INFO]: Setting RC values...
+[INFO RSZ-0046] Found 115 endpoints with hold violations.
+[INFO RSZ-0032] Inserted 115 hold buffers.
+Placement Analysis
+---------------------------------
+total displacement        761.9 u
+average displacement        0.0 u
+max displacement            9.0 u
+original HPWL         1036808.8 u
+legalized HPWL        1072926.3 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 17926 instances
+[INFO DPL-0021] HPWL before          1072926.3 u
+[INFO DPL-0022] HPWL after           1037183.6 u
+[INFO DPL-0023] HPWL delta               -3.3 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/cts/14-peripheral_unit.resized.odb'…
+Writing netlist to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/cts/14-peripheral_unit.resized.nl.v'…
+Writing powered netlist to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/cts/14-peripheral_unit.resized.pnl.v'…
+Writing layout to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/cts/14-peripheral_unit.resized.def'…
+Writing timing constraints to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/cts/14-peripheral_unit.resized.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 376798 u^2 53% utilization.
+area_report_end

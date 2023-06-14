@@ -1,0 +1,25 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/merged.nom.lef at line 68353.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/signoff/36-peripheral_unit.p.def
+[INFO ODB-0128] Design: peripheral_unit
+[INFO ODB-0130]     Created 288 pins.
+[INFO ODB-0131]     Created 97347 components and 499837 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 369044 connections.
+[INFO ODB-0133]     Created 39308 nets and 130780 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/signoff/36-peripheral_unit.p.def
+define_corners Typical
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Setting global connections for newly added cells…
+[WARNING] Did not save OpenROAD database!
+Writing netlist to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/signoff/36-peripheral_unit.nl.v'…
+Writing powered netlist to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/signoff/36-peripheral_unit.pnl.v'…

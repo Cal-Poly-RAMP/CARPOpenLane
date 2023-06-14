@@ -1,0 +1,44 @@
+OpenROAD 7f6c37aa57467242807155c654deb350022d75c1 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/placement/7-global.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/synthesis/resizer_sky130_fd_sc_hd__tt_025C_1v80.lib
+[INFO]: Setting RC values...
+[INFO RSZ-0027] Inserted 94 input buffers.
+[INFO RSZ-0028] Inserted 176 output buffers.
+[WARNING RSZ-0065] max wire length less than 3048u increases wire delays.
+[INFO RSZ-0034] Found 1 slew violations.
+[INFO RSZ-0035] Found 4 fanout violations.
+[INFO RSZ-0036] Found 1 capacitance violations.
+[INFO RSZ-0037] Found 1127 long wires.
+[INFO RSZ-0038] Inserted 4599 buffers in 1128 nets.
+[INFO RSZ-0039] Resized 32626 instances.
+[INFO RSZ-0042] Inserted 12 tie sky130_fd_sc_hd__conb_1 instances.
+[INFO RSZ-0042] Inserted 1 tie sky130_fd_sc_hd__conb_1 instances.
+Placement Analysis
+---------------------------------
+total displacement      84973.9 u
+average displacement        1.7 u
+max displacement           12.2 u
+original HPWL          976164.5 u
+legalized HPWL        1026898.5 u
+delta HPWL                    5 %
+
+[INFO DPL-0020] Mirrored 17611 instances
+[INFO DPL-0021] HPWL before          1026898.5 u
+[INFO DPL-0022] HPWL after           993548.0 u
+[INFO DPL-0023] HPWL delta               -3.2 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/placement/9-resizer.odb'…
+Writing netlist to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/placement/9-resizer.nl.v'…
+Writing powered netlist to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/placement/9-resizer.pnl.v'…
+Writing layout to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/placement/9-resizer.def'…
+Writing timing constraints to '/openlane/designs/peripheral_unit/runs/RUN_2023.06.14_06.20.01/tmp/placement/9-resizer.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 362324 u^2 51% utilization.
+area_report_end

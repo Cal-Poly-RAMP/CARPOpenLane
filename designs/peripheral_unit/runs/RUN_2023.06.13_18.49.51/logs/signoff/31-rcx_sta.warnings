@@ -1,7 +1,0 @@
-Warning: /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/routing/peripheral_unit.nl.v line 156305, module sky130_fd_sc_hd__tapvpwrvgnd_1 not found. Creating black box for TAP_622.
-Warning: /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/routing/peripheral_unit.nl.v line 172057, module sky130_ef_sc_hd__decap_12 not found. Creating black box for FILLER_0_0_9.
-Warning: /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/routing/peripheral_unit.nl.v line 172059, module sky130_fd_sc_hd__fill_1 not found. Creating black box for FILLER_0_0_27.
-Warning: /openlane/designs/peripheral_unit_4/runs/RUN_2023.06.13_18.49.51/results/routing/peripheral_unit.nl.v line 172065, module sky130_fd_sc_hd__fill_2 not found. Creating black box for FILLER_0_0_57.
-Warning: There are 1020 unclocked register/latch pins.
-Warning: There are 1033 unconstrained endpoints.
-[WARNING] Did not save OpenROAD database!
